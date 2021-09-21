@@ -1,0 +1,470 @@
+Seção 2: Preparação do ambiente e introdução à linguagem C# e a plataforma .NET
+
+
+3. O que vamos aprender nesta seção?
+
+
+4. Introdução à Linguagem C#
+
+C# (CSharp) é uma linguagem de programação orientada a objetos criada pela Microsoft, faz parte da plataforma .NET.
+
+É baseada na linguagem C++ e Java.
+
+Tem elementos do Pascal e do Delphi.
+
+Foi criada por um ex-engenheiro da Borland, Anders Hejlsberg,  que foi contratado pela Microsoft.
+
+
+Atual principal linguagem da Microsoft.
+
+
+História e características da Linguagem C#
+
+
+A linguagem C# foi criada junto com a arquitetura .NET.
+
+C# é considerada a linguagem símbolo do .NET pelas seguintes razões:
+
+- Foi criada praticamente do zero para funcionar na nova plataforma, sem preocupações de compatibilidade com o código de legado.
+- O compilador C# foi o primeiro a ser desenvolvido.
+- A maior parte das classes do .NET Framework foram desenvolvidas em C#.
+
+
+C# OU CSHARP?
+
+C# refere-se ao sinal musical (sustenido), que aumenta em 1/2 tom uma nota musical.
+
+Em português seria algo como "C Sustenido" ou "Dó Sustenido".
+
+
+
+CARACTERÍSTICAS
+
+- Simplicidade: os projetistas costumam dizer que essa linguagem é tão poderosa quanto o C++ e tão simples quanto o visual basic;
+- Completamente orientada a objetos.
+- Fortemente tipada: ajuda a evitar erros por manipulação imprópria de tipos;
+- Gera código gerenciado: o ambiente .NET é gerenciado, também é o C#;
+- Tudo é um objeto: System.Object é a classe base de todo o sistema;
+- Controle de versões: cada assembly gerado, seja como EXE ou DLL, tem informação sobre a versão do código.
+- Garbage Collector.
+- Suporte a código legado: suporte a código legado de objetos COM e DLLs escritas em uma linguagem não-gerenciada;
+- Flexibilidade: se o desenvolvedor precisar usar ponteiros, o C# permite, mas ao custo de desenvolver código não-gerenciado, chamado "unsafe".
+- Linguagem gerenciada: os programas desenvolvidos em C# executam num ambiente gerenciado, o que siginifica que todo o gerenciamento de memória é feito pelo runtime
+via o GC (Garbage Collector).
+
+Apesar de C# ser similar a Java, existem uma série de diferenças importantes:
+
+- O Java utiliza a JVM, o C# o .Net Framework.
+- O Java pode ser compilado em qualquer plataforma, o C# possui compiladores para Windows, Linux e Mac OS.
+
+A Plataforma .NET da Microsoft provê compiladores para Windows, já a plataforma Mono provê compiladores para Windows, Linux e Mac OS.
+
+.Net Core!
+
+
+EVOLUÇÃO
+
+A primeira versão do C# começou a ser usada à partir do Visual Studio 2002.
+
+A segunda versão da linguagem (2.0) foi introduzida com o Visual Studio 2005 e o Visual Studio 2005 Express.
+
+Com o Visual Studio 2008 e o Visual Studio 2008 Express, o C# 3.0.
+
+Na sua versão 4.0, contando com o Visual Studio 2010 e o Visual Studio 2010 Express.
+
+
+ATUALMENTE
+
+Na versão 8, contando com o Visual Studio 2019, algumas das novidades são:
+
+Readonly members
+Default interface methods
+Switch expressions
+Property patterns
+Tuple patterns
+Using declarations
+Static local functions
+Nullable reference types
+Asynchronous streams
+Stackalloc in nested expressions
+
+
+Então por que escolher C#?
+
+Subjetivamente:
+
+- Simples e limpa na sintaxe.
+- Fácil de aprender para quem vem do Java (estratégico no sucesso da linguagem).
+- Linguagem bem paga no mercado e muito popular.
+
+Objetivamente:
+- Perfomance;
+- Linguagem que reúne o melhor do C++, Java e Delphi e nenhum dos seus defeitos.
+- Suporte e evoluções garantidas;
+- Desde que a linguagem C# foi lançada evoluindo constantemente, Generics, LINQ, asycn/await, MVC, etc.
+- O C# pode ser usado com o novo .NET Core que á uma plataforma open-source que estão ficando popular e com isso alavancando
+o uso do C#.
+- Aplicações ASP .NET Core, que rodam no .NET Core e que usam C#, estão sendo usadas cada vez mais em produção.
+- Com o advento do .NET Core, como uma plataforma open-source, que inclui o C# e a ASP .NET Core, agora os desenvolvedores
+poderão trabalhar e desenvolver para Windows, Mac e Linux.
+
+
+Recapitulando:
+
+A criação do C# foi baseada em C, C++ e Java. Dessa maneira, o desenvolvedor possui um apoio referencial no aprendizado
+da linguagem.
+
+Desde o seu lançamento, o C# permite o desenvolvimento de aplicações executadas exclusivamente sobre a plataforma .NET Framework.
+
+A linguagem C# veio acompanhada de uma IDE comercial de desenvolvimento: Visual Studio. A partir de 2005, contou com uma IDE
+gratuita, denominada Visual Studio Express.
+
+A utilização do Visual Studio como plataforma de desenvolvimento e o C# garantem algumas vantagens nas construções de aplicativos,
+tais como: programação orientada a objetos, garbage collector, validação de dados e tratamento de erros.
+
+A linguagem está em constante evolução e é o "carro chefe" da Microsoft.
+
+Do ponto anterior podemos adicionar ainda que se assegura a longevidade dela e o suporte.
+
+Por tanto, é uma aposta de aprendizado segura.
+
+A linguagem tem um futuro brilhante pela frente com o .Net Core.
+
+
+
+
+5. Introdução à Plataforma .NET
+
+
+O .NET FRAMEWORK é um framework de software desenvolvido pela Microsoft que roda principalmente em Microsoft Windows.
+
+Inclui uma grande biblioteca, fornece interoperabilidade de linguagem (cada linguagem pode utilizar o código escrito em outras línguas)
+através de várias linguagens de programação. Programas escritos para o .NET Framework executam em um ambiente de software(em constraste
+com o ambiente de hardware), conhecido como o Common Language Runtime (CLR), uma máquina virtual do aplicativo que fornece serviços como
+segurança, gerenciamento de memória e manipulação de exceções. A biblioteca de classes e CLR, juntos, constituem o .NET Framework.
+
+Ou seja:
+
+Grande biblioteca de classes;
+Interoperabilidade de linguagem;
+Commom Language Runtime (CLR), máquina virtual de aplicativo.
+Fornece serviços como segurança, gerenciamento de memória e manipulação de exceções.
+
+Isto tudo é o .NET Framework.
+
+O .NET Framework Base Class Library fornece:
+
+- Interface de usuário;
+- Acesso a dados;
+- Conectividade com banco de dados;
+- Criptografia;
+- Desenvolvimento de aplicativos Web;
+- Algoritmos numéricos e comunicações de rede.
+
+Os programadores produzem software, combinando seu próprio código-fonte com o .NET Framework e outras bilbiotecas.
+
+A Microsoft também tem um ambiente de desenvolvimento integrado em grande parte por software .NET chamado Visual Studio.
+
+Então:
+
+Todo e qualquer código gerado para .NET pode ser executado em qualquer dispositivo que possua uma framework de tal plataforma.
+
+Com ideia semelhante a plataforma Java, o programador deixa de escrever código para um sistema ou dispositivo específico,
+e passa a escrever para a plataforma .NET.
+
+
+Linguagens .NET hoje:
+
+APL, Boo, Clarion, COBOL, Component Pascal, C#, C++, F#, Eiffel
+Forth, Fortran, Haskell, Java, Jscript, J#, Lua, Mercury, Piet, Oberon
+Delphi, Oz, Pascal, Perl, PowerBuilde, PowerShell, Python, RPG
+Ruby, Scheme, SmallTalk, Standard ML, Visual Basic, xBase.
+
+Os programas desenvolvidos para .NET são duplo-compilados (compilados duas vezes), uma vez na distribuição (gerando um "bytecode")
+e outra na execução.
+
+Um programa é escrito em qualquer linguagem de programação disponível para a plataforma, o código fonte gerado pelo programador é
+então compilado pela linguagem escolhida  gerando um código intermediário em uma linguagem chamada
+MSIL (Microsoft Intermediate Language).
+
+
+.NET Framework Características
+
+- Aplicações legadas podem continuar rodando no release anterior do Framework, para não existir problemas de compatibilidade.
+- Possui Background Garbage Collector;
+
+Para Web, algumas das melhorias que são encontradas na nova versão do Framework:
+
+- Pré-carregamento da sua aplicação;
+- A utilização de Routing no ASP.NET para Web Forms;
+- A utilização do Pattern MVC.
+
+
+C# CODE => COMPILER => COMMOM LANGUAGE INFRAESTRCTURE => COMMOM INTERMEDIATE LANGUAGE => COMMON LANGUAGE RUNTIME => 010101
+
+
+.NET Framework Hoje:
+
+
+.NET FRAMEWORK
+WPF
+Windows Forms
+ASP.NET
+
+
+.NET CORE
+UWP
+AS.NET Core 
+
+
+XAMARIN
+iOS
+OS X
+Android
+
+
+.NET STANDARD LIBRARY
+One library to rule them all
+
+
+COMMOM INFRASTRUCTURE
+Compilers
+Languages
+Runtime Componentes
+
+
+
+.NET 5 - A UNIFIED PLATFORM
+
+DESKTOP
+WPF
+WINDOWS FORMS
+UWP
+
+WEB
+ASP.NET
+
+CLOUD
+AZURE
+
+MOBILE
+XAMARIN
+
+GAMING
+UNITY
+
+IOT
+ARM32
+ARM64
+
+AI
+
+ML.NET
+.NET for Apache Spark
+
+TOOLS
+Visual Studio
+Visual Studio For Mac
+Visual Studio Code
+Command Line Interface
+
+
+
+.NET STANDARD
+.NET5
+
+
+INFRASTRUCTURE
+Runtime Componentes
+Compilers
+Languages
+
+
+
+
+6. Tipos de aplicativos que podemos desenvolver com a plataforma .NET
+
+
+Com o .NET Framework e o C# podemos desenvolver uma ampla variedade de aplicações e para uma enorme quantidade de plataformas.
+
+Desde aplicações Windows Desktop, Web e serviços REST até jogos e aplicativos para celulares, seja Android ou IOS.
+
+
+WINDOWS
+
+Console
+Windows Forms
+Windows Presentations Foundation (WPF) - Estilo Windows 10
+
+
+WEB
+
+Web Forms
+ASP NET MVC
+WEB API
+Windows Communication Foundation (WCF)
+
+
+MOBILE
+
+Cordova
+IONIC - Suporte a JS
+Xamarin (Android, IOS)
+
+Isto quer dizer que você também pode desenvolver para tvOS, watchOS e macOS.
+
+
+
+GAMING
+
+Unity
+Mono Game
+
+
+Com as duas plataformas podem ser criados jogos para uma variedade de dispositivos desde mobile até XBOX.
+
+
+Mono
+
+É uma biblioteca .Net para Linux https://www.mono-project.com
+
+-Open Source
+- Cross Platform
+
+"Patrocionado pela Microsoft, o Mono é uma implementação de código aberto do .NET Framework da Microsoft, com 
+base nos padrões ECMA para C# e Commom Runtime. Uma família crescente de soluções e uma comunidade ativa e 
+entusiástica contribuem para que a Mono torne-se a principal opção para o desenvolvimento de aplicativos de
+plataforma cruzada."
+
+
+"O .NET Core é uma plataforma de desenvolvimento de código aberto de uso geral mantida pela Microsoft e pela comunidade
+.NET no GitHub. É multiplataforma (compatível com Windows, macOS e Linux) e pode ser usado para criar aplicativos
+de dispositivos, nuvem e IoT".
+
+
+CARACTERÍSTICAS
+
+CROSS PLATFORM: é executado nos sistemas operacionais Windows, macOS e Linux.
+Consistente entre arquiteturas: executa seu código com o mesmo comportamento em várias arquiteturas, incluíndo X64, x86 e ARM.
+
+
+FERRAMENTAS DE LINHA DE COMANDO: incluir ferramentas de linha de comando fáceis de usar, que podem ser usadas para
+desenvolvimento local e em cenários de integração contínua.
+
+IMPLANTAÇÃO FLEXÍVEL: pode ser incluído no seu aplicativo ou instalado lado a lado. Pode ser usado com contêineres Docker.
+
+COMPATÍVEL: O .NET Core é compatível com .NET Framework, Xamarin e Mono, via .NET Standard.
+
+CÓDIGO ABERTO: a plataforma .NET Core é código aberto, usando as licenças MIT e Apache 2. O .NET Core é um projeto do .NET
+Foundation.
+
+SUPORTADO PELA MICROSOFT: O .NET Core é suportado pela Microsoft, de acordo com o Suporte do .NET Core.
+
+
+LINGUAGENS SUPORTADAS: As linguagens C#, Visual Basic e F# podem ser usadas para escrever aplicativos e bibliotecas para 
+o .NET CORE. Essas linguagens podem ser usadas no seu editor de texto favorito ou no IDE (Ambiente de desenvolvimento
+integrado), incluíndo:
+
+Visual Studio
+Visual Studio Code
+Sublime Text
+Vim
+
+
+
+7. Instalação e configuração do ambiente no Windows´
+
+Visual Studio 2019 Community
+
+
+
+https://visualstudio.microsoft.com/pt-br/downloads/
+
+
+EXTENSÕES
+
+https://marketplace.visualstudio.com
+
+Productivity Power Tools.
+
+
+
+
+8. Instalação e configuração do ambiente no Linux e no Mac
+
+
+.NET Core
+
+Visual Studio Code, permite programar para Linux, Mac e Windows.
+
+Permite extensões e é integrado com Git.
+
+
+
+https://code.visualstudio.com
+
+.Net Core : https://dotnet.microsoft.com/download
+
+Dotnet --version
+
+
+
+Linux- Mono Develop
+
+https://www.monodevelop.com
+
+
+
+CRIANDO UM PROJETO DIRETAMENTE NO CONSOLE
+
+
+md console 
+cd console
+dotnet --version
+5.0.401
+
+dotnet new  console - tipo do projeto
+
+code . - Abre Visual Studio Code
+
+dotnet run console
+
+Primeiro Programa C#!
+
+
+
+9. Instalação passo a passo do ambiente no Mac
+
+https://docs.microsoft.com/pt-br/dotnet/core/install/macos
+
+https://code.visualstudio.com/download
+
+https://visualstudio.microsoft.com/pt-br/vs/mac/
+
+
+
+
+10. Conhecendo a IDE Visual Studio
+
+Visual Studio 2019 Community
+
+View > Error List.
+
+
+Tools> Options > Preferences > Text Editor > C#.
+
+Extensions > ReSharper(Excelente extensão, porém não será usada no curso).
+
+
+File > New Project > Console App (.NET Framework) > Next > Create.
+
+
+Program.cs
+
+Para rodar: Start >
+
+Ferramenta muito útil: Intelisense.
+
+
+
+11. Recapitulando

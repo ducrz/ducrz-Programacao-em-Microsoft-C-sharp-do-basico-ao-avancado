@@ -1,0 +1,7 @@
+C:\Users\eduardo\source\repos\ducrz\ducrz-Programacao-em-Microsoft-C-sharp-do-basico-ao-avancado\Meu primeiro programa CSharp\Meu primeiro programa CSharp\bin\Debug\Meu primeiro programa CSharp.exe.config
+C:\Users\eduardo\source\repos\ducrz\ducrz-Programacao-em-Microsoft-C-sharp-do-basico-ao-avancado\Meu primeiro programa CSharp\Meu primeiro programa CSharp\bin\Debug\Meu primeiro programa CSharp.exe
+C:\Users\eduardo\source\repos\ducrz\ducrz-Programacao-em-Microsoft-C-sharp-do-basico-ao-avancado\Meu primeiro programa CSharp\Meu primeiro programa CSharp\bin\Debug\Meu primeiro programa CSharp.pdb
+C:\Users\eduardo\source\repos\ducrz\ducrz-Programacao-em-Microsoft-C-sharp-do-basico-ao-avancado\Meu primeiro programa CSharp\Meu primeiro programa CSharp\obj\Debug\Meu primeiro programa CSharp.csproj.AssemblyReference.cache
+C:\Users\eduardo\source\repos\ducrz\ducrz-Programacao-em-Microsoft-C-sharp-do-basico-ao-avancado\Meu primeiro programa CSharp\Meu primeiro programa CSharp\obj\Debug\Meu primeiro programa CSharp.csproj.CoreCompileInputs.cache
+C:\Users\eduardo\source\repos\ducrz\ducrz-Programacao-em-Microsoft-C-sharp-do-basico-ao-avancado\Meu primeiro programa CSharp\Meu primeiro programa CSharp\obj\Debug\Meu primeiro programa CSharp.exe
+C:\Users\eduardo\source\repos\ducrz\ducrz-Programacao-em-Microsoft-C-sharp-do-basico-ao-avancado\Meu primeiro programa CSharp\Meu primeiro programa CSharp\obj\Debug\Meu primeiro programa CSharp.pdb
