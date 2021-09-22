@@ -245,12 +245,134 @@ ou
 contador -= 23;
 
 
-
-
-
 16. Estruturas condicionais simples
 
+Uma estrutura condicional é uma forma de controlar o fluxo de uma aplicação.
+
+
+Dada uma determinada condição, podemos entregar um valor ou outro, realizar uma operação ou outra.
+
+Estruturas condicionais são baseadas em álgebra booleana.
+
+
+
+
+Um exemplo seria, que para realizar uma certa operação, seja necessário preencher uma condição da.a
+
+
+Exemplo:
+
+usuarioIdade >= 18 anos
+
+
+ //Restringir por idade
+
+            Console.Write("Digite a sua idade: ");
+            string valor = Console.ReadLine();
+
+            int idadeUsuario = Convert.ToInt16(valor);
+
+            int regraIdadeLimite = 18;
+
+            if (idadeUsuario >= regraIdadeLimite)
+            {
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("Entrada Permitida ao Sistema!");
+            }
+            else
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Entrada Não Permitida ao Sistema!");
+            }
+            Console.ReadKey();
+
+
+Operadores Matemáticos (+,-,* e /).
+
+
+ //Calculadora Simples
+
+            //Console.Write("Digite o primeiro valor: ");
+            //string valor1 = Console.ReadLine();
+
+            //while (Convert.ToInt32(valor1) == 0)
+            //{
+            //    Console.WriteLine("Valor Inválido. Digite o Primeiro Valor Novamente: ");
+            //    valor1 = Console.ReadLine();
+
+            //}
+
+            //Console.WriteLine();
+
+            //Console.Write("Insira o segundo valor: ");
+            //string valor2 = Console.ReadLine();
+
+
+            //while (Convert.ToInt32(valor2) == 0)
+            //{
+            //    Console.WriteLine("Valor Inválido. Digite o Segundo Valor Novamente: ");
+            //    valor2 = Console.ReadLine();
+
+            //}
+
+            //Console.WriteLine();
+
+            //Console.Write("Insira o Operador (+),(-),(*) ou (/): ");
+            //string operador = Console.ReadLine();
+            //decimal resultado = 0;
+
+            //if(operador == "+")
+            //    resultado = Convert.ToInt32(valor1) + Convert.ToInt32(valor2);
+            //if (operador == "-")
+            //    resultado = Convert.ToInt32(valor1) - Convert.ToInt32(valor2);
+            //if (operador == "*")
+            //    resultado = Convert.ToInt32(valor1) * Convert.ToInt32(valor2);
+            //if (operador == "/")
+            //    resultado = Convert.ToInt32(valor1) / Convert.ToInt32(valor2);
+
+            //Console.WriteLine("O Resultado é: "+resultado);
+
+            //Console.ReadKey();
+
+
+ //Sistema de Login
+
+            string usuarioSistema = "usuario";
+            string senhaSistema = "123";
+
+
+            Console.Write("Digite o nome do Usuário: ");
+            string usuarioInserido = Console.ReadLine();
+
+            Console.WriteLine();
+
+
+            Console.Write("Digite a senha: ");
+            string senhaInserida = Console.ReadLine();
+
+            Console.WriteLine();
+
+
+            if (usuarioInserido != usuarioSistema || senhaInserida != senhaSistema){
+                Console.ForegroundColor = ConsoleColor.Red;
+
+                Console.WriteLine("Usuario ou Senha Incorretos! ");
+            }
+            else
+            {
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("Bem-vindo ao Sistema!");
+            }           
+
+            Console.ReadKey();
+
+
+
+
+
 17. Estruturas condicionais aninhadas
+
+
 
 18. Estruturas de repetição
 
