@@ -1,0 +1,87 @@
+Seção 3: C# Básico
+
+
+12. O que vamos aprender nesta seção?
+
+Elementos da linguagem.
+Introdução a linguagem C#.
+
+Variáveis, tipos de dados, alcance.
+
+Operadores lógicos, aritméticos e de atribuição.
+
+Estruturas condicionais simples.
+
+Estruturas condicionais aninhadas.
+
+Estruturas de repetição, while, do while e for.
+
+
+
+13. Elementos da linguagem C#
+
+Linguagem de programação orientada a objetos, fortemente tipiada, desenvolvida pela Microsoft como parte da plataforma .NET.
+
+Baseada no C++ mas inclui influências de outras linguagens como o Object Pascal e Java.
+
+
+Características
+
+Simplicidade;
+Completamente orientada a Objetos;
+Fortemente Tipada;
+Gera código gerenciado: o ambiente .NET é gerenciado, também é o C#;
+Tudo é um objeto: System.Object é a classe base de todo o sistema;
+Controle de Versões: cada assembly gerado, seja como EXE ou DLL, tem informação sobre a versão do código.
+Suporte a código legado;
+Flexibilidade;
+Linguagem Gerenciada: todo o gerenciamento de memória é feito pelo runtime via o GC (Garbage Collector).
+
+
+Novo projeto no Visual Studio > Console App (.NET Framework).
+
+
+
+Elementos básicos de um projeto Console:
+
+
+Function main
+
+Args{}
+
+Console
+	Write
+	WriteLine
+	ReadKey
+
+
+MeuProjeto 1 2 3 - Passando valores
+
+Args[]={"1","2","3"} - Array
+
+
+Passagens de parâmetros para controle de comportamento do programa.
+
+
+namespace - Não é obrigatório serve para organizar o código/projeto, todas funções relacionadas a data por exemplo,
+podem estar em um namespace.
+
+
+Importando: using nomeclasse.namespace;
+
+
+
+14. Variáveis, tipos de dados e alcance
+
+
+
+15. Operadores lógicos, aritméticos e de atribuição
+
+16. Estruturas condicionais simples
+
+17. Estruturas condicionais aninhadas
+
+18. Estruturas de repetição
+
+
+19. Recapitulando
