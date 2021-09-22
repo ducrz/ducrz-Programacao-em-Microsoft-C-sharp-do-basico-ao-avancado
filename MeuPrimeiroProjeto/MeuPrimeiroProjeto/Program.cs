@@ -9,32 +9,27 @@ namespace MeuPrimeiroProjeto
     {
         static void Main(string[] args)            
         {
-            //variáveis
-            int a;
-            a = 100;
-            Console.WriteLine("Valor de a: " + a);
+            //Calculadora Simples
 
-            double area = 0;
-            Console.WriteLine("Valor de área: " + area);
+            Console.Write("Digite o primeiro valor: ");
+            string valor1 = Console.ReadLine();
 
-            int salario, imposto, soma;
-            int contador = 10;
-            Console.WriteLine("Valor de contador: " + contador);
+            Console.WriteLine();
 
-            string nome;
-            string nomeCompleto = "Eduardo Silva Monteiro";
-            Console.WriteLine("Nome Completo: " + nomeCompleto);
+            Console.Write("Insira o segundo valor: ");
+            string valor2 = Console.ReadLine();
 
+            Boolean resultado = valor1 == valor2;
+
+            Console.WriteLine("Resultado é igual: "+resultado);
+            Console.WriteLine();
 
 
-            //Entrada do usuário
+            Boolean comparacaoMaiorQue = Convert.ToInt16(valor1) > Convert.ToInt16(valor2);
 
-            Console.Write("Insira o seu nome completo: ");
-            string nomeCompletoUsuario = Console.ReadLine();
+            Console.WriteLine("Resultado é valor 1 maior que valor 2 : "+comparacaoMaiorQue);
 
-            Console.WriteLine("Seu nome completo é: "+nomeCompletoUsuario);
             Console.ReadKey();
-
 
 
         }

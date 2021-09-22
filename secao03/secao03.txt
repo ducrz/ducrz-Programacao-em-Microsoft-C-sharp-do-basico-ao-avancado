@@ -201,6 +201,53 @@ Console.WriteLine(variavel.GetType());
 
 15. Operadores lógicos, aritméticos e de atribuição
 
+
+OPERADORES
+
+
+PROPÓSITO                               C#
+Divisão de inteiros			/
+Módulo (divisão retornando o resto)     %
+Multiplicação				*
+Concatenar Strings			+
+Incremento Postfix			++
+Decremento Postfix			--
+
+Atribuição				=
+Soma e Atribui				+=
+Subtrai e atribui			-=
+
+
+Igual					==
+Não igual				!=
+Lógico-NOT				!
+Lógico-AND				&&
+Lógico-OR				||
+Condicional				?:
+
+
+
+Exemplo:
+
+int contador;
+
+contador = 2;
+
+contador = contador + 40;
+
+
+Outra maneira mais prática:
+
+contador += 40;
+
+ou
+
+contador -= 23;
+
+
+
+
+
 16. Estruturas condicionais simples
 
 17. Estruturas condicionais aninhadas
