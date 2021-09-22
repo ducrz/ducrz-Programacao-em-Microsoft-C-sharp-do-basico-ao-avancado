@@ -74,6 +74,130 @@ Importando: using nomeclasse.namespace;
 14. Variáveis, tipos de dados e alcance
 
 
+Variável - lugar usado para armazenar informações que podem sofrer ou não alterações durante a execução de um programa.
+
+São usadas para guardar valores que serão usados durante o decorrer do programa, também para guardar informações
+fornecidas pelo usuário e que serão exibidas mais tarde.
+
+Cada variável usada é identificada por um nome e por um tipo.
+
+
+É possível guardar informações de diversos tipos em uma variável.
+
+
+Uma variável tem um nome e um tipo de dado que será armazenado.
+
+Quando você guarda uma informação em uma variável, está usando a memória do computador para isto.
+
+Quanto maior a informação guardada, mais memória será usada, dependendo do tipo de variável usada.
+
+
+
+Para cálculos:  Integer
+		Long, Single e Decimal - mais uso de memória.
+
+
+Cada tipo C# aponta (é um atalho) para o tipo .NET Framework.
+
+
+TIPOS DE DADOS C#
+
+C# Type         .NET Framework type
+Bool            System.Boolean
+Byte            System.Byte
+Sbyte           System.SByte
+Char            System.Char
+Decimal         System.Decimal
+Double          System.Double
+Float           System.Single
+Int             System.Int32
+Uint            System.UInt32
+Long            System.Int64
+Ulong           System.UInt64
+Object          System.Object
+Short           System.Int16
+Ushort          SystemUInt16
+String          System.String
+
+Isso quer dizer que se declararmos a variável desta forma:
+
+
+string nome;
+
+ou
+
+System.String nome;
+
+
+Nas duas formas, o resultado será o mesmo, o atalho serve apenas para facilitar no desenvolvimento.
+
+Este atalho é definido na forma de uma instrução "using";
+
+
+DECLARANDO VARIÁVEIS
+
+São diferentes formas de declarar variáveis em C#:
+
+int a;
+
+double area = 0;
+
+int salario, imposto, soma;
+
+
+int contador = 10;
+
+string nome;
+
+string nomeCompleto = "Visual Studio";
+
+
+
+
+Tipos de Variáveis e os valores armazenáveis em C#
+
+
+C# Type                 Valores Possíveis
+Bool			Verdadeiro ou Falso (booleano)
+Byte			0 a 255 (8 bits)
+Sbyte			-128 à 127 (8 bits)
+Char			Um caractere (16 bits)
+Decimal 		+-1.0 x 10-28 à +-7.9x1028 (128 bits)
+Double			+-5.0 x 10-324 à {- 1.7 x 10308 (64 bits)
+Float			+-1.5 x 10-45 à +-3.4 x 1038 (32 bits)
+Int			-2,147,483,648 à 2,147,483,647(32 bits)
+Uint			0 a 4,294,967,295 (32 bits)
+Long			-9,223,372,036,854,775,808 à -9,223,372,036,854,775,807 (64 bits)
+Ulong			0 à 18,446,744,073,709,551,615 (64 bits)
+Object			Qualquer tipo.
+Short			-32,768 à 32,767 (16 bits)
+Ushort			0 a 65,535 (16 bits)
+String			Sequência de caracteres (16 bits por caractere)
+
+
+
+Alcance de variáveis / Modificadores de Acesso
+
+
+public: o acesso não é restrito
+
+protected: o acesso é limitado a classe ou a tipos derivados da classe recipiente.
+
+
+internal: o acesso é limitado ao conjunto de módulos (assembly) corrente.
+
+protected internal: o acesso é limitado ao conjunto corrent ou tipos derivados da classe recipiente.
+
+private: o acesso é limitado ao tipo de recipiente.
+
+
+
+Para retornar o tipo de qualquer vairável do C# é possível usar o método GetType();
+
+Console.WriteLine(variavel.GetType());
+
+
+
 
 15. Operadores lógicos, aritméticos e de atribuição
 

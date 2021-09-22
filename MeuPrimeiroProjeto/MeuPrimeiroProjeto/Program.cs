@@ -9,13 +9,33 @@ namespace MeuPrimeiroProjeto
     {
         static void Main(string[] args)            
         {
-            Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("Olá C#");
+            //variáveis
+            int a;
+            a = 100;
+            Console.WriteLine("Valor de a: " + a);
 
-            Console.ForegroundColor = ConsoleColor.Red;
+            double area = 0;
+            Console.WriteLine("Valor de área: " + area);
 
-            Console.WriteLine("Olá usando WriteLine");
+            int salario, imposto, soma;
+            int contador = 10;
+            Console.WriteLine("Valor de contador: " + contador);
+
+            string nome;
+            string nomeCompleto = "Eduardo Silva Monteiro";
+            Console.WriteLine("Nome Completo: " + nomeCompleto);
+
+
+
+            //Entrada do usuário
+
+            Console.Write("Insira o seu nome completo: ");
+            string nomeCompletoUsuario = Console.ReadLine();
+
+            Console.WriteLine("Seu nome completo é: "+nomeCompletoUsuario);
             Console.ReadKey();
+
+
 
         }
     }
