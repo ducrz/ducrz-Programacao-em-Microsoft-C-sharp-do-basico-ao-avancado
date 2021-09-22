@@ -368,13 +368,250 @@ Operadores Matemáticos (+,-,* e /).
 
 
 
-
-
 17. Estruturas condicionais aninhadas
+
+São condições, dentro de outras condições. Exemplo: Ifs aninhados
+
+
+
+Nova condição.
+
+Para acessar o sistema, o usuário menor de 18 e maior de 13 anos precisará de consentimento parental.
+
+else if (senão se)
+
+ //Controle de Idade
+            int regraIdadeLimite = 18;
+
+            Console.Write("Digite a sua idade: ");
+            string idade = Console.ReadLine();
+            int idadeUsuario = Convert.ToInt16(idade);
+
+            if(idadeUsuario >= regraIdadeLimite)
+            {
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("Entrada Permitida! ");
+            }
+            else if(idadeUsuario >= 13 && idadeUsuario < regraIdadeLimite)
+            {
+                Console.Write("Consentimento Parental? (S) ou (N) ");
+                string consentimento = Console.ReadLine();
+                if(consentimento == "S")
+                {
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.WriteLine("Entrada Permitida! ");
+                }
+                else
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("Entrada Não Permitida! ");
+                }
+                   
+            }
+            else
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Entrada Não Permitida! ");
+            }
+            Console.ReadKey();
+
+
+Problemas: Deixa o código menos legível, difícil de manter e podem gerar erros difíceis de ser encontrados depois.
+
+Se existir muitos IFs aninhados, pode-se criar o que os programadores chamam de "código hadouken".
+
+
+
+Exercício:
+
+Modificar o Sistema de Login
+
+Apresentar mensagens personalizadas para usuário homem, mulher e criança.
+
+//Sistema de Login Exercício
+
+            string usuarioSistema = "usuario";
+            string senhaSistema = "123";
+
+
+            Console.Write("Digite o nome do Usuário: ");
+            string usuarioInserido = Console.ReadLine();
+
+            Console.WriteLine();
+
+            Console.Write("Digite a Idade do Usuário: ");
+            string idadeUsuario = Console.ReadLine();
+            int idadeInformada = Convert.ToInt32(idadeUsuario);
+
+
+            Console.WriteLine();
+
+            Console.Write("Digite o Sexo do Usuário: (M) ou (F) ");
+            string sexoUsuario = Console.ReadLine();
+
+
+            Console.WriteLine();
+
+
+            Console.Write("Digite a senha: ");
+            string senhaInserida = Console.ReadLine();
+
+            Console.WriteLine();
+
+
+            if (usuarioInserido != usuarioSistema || senhaInserida != senhaSistema)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+
+                Console.WriteLine("Usuario ou Senha Incorretos! ");
+            }
+            else
+            {
+
+                if (idadeInformada > 18 && sexoUsuario == "M")
+                {
+                    //Homem
+                    Console.ForegroundColor = ConsoleColor.DarkGreen;
+                    Console.WriteLine("Bem-vindo ao Sistema!");
+                }
+                else if (idadeInformada > 18 && sexoUsuario == "F")
+                {
+                    //Mulher
+                    Console.ForegroundColor = ConsoleColor.DarkMagenta;
+                    Console.WriteLine("Bem-vindo ao Sistema!");
+                }
+                else if (idadeInformada > 12 && idadeInformada < 18)
+                {
+                    //Adolescente
+                    Console.ForegroundColor = ConsoleColor.Cyan;
+                    Console.WriteLine("Bem-vindo ao Sistema!");
+                }
+                else if (idadeInformada < 12)
+                {
+                    //Criança
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                    Console.WriteLine("Bem-vindo ao Sistema!");
+                }
+
+            }
+
+            Console.ReadKey();
+		
+
+
 
 
 
 18. Estruturas de repetição
+
+While, do while, for
+
+São comandos da linguagem que permitem executar um determinado bloco de código repetidamente.
+
+A quantidade de vezes que o bloco de código é executado depende de condições programáveis.
+
+Estas estruturas de repetição são chamadas de loops ou bucles.
+
+São muito úteis para iterar (percorrer) elementos de uma lista ou array por exemplo.
+
+C# tem três tipos de loops ou estruturas de repetição:
+
+For
+Do While
+While
+
+Além disto existe o ForEach.
+
+
+
+WHILE
+
+
+ENQUANTO CONDIÇÃO TRUE > EXECUTA BLOCO DE CÓDIGO
+		  FALSE > SAI DO LOOP
+
+
+
+
+INSTRUÇÃO FOR
+
+É uma estrutura de repetição onde a condição do loop é de incremente (ou decremento) numérico.
+
+for(int i=0; i <5; i++){
+
+	Console.WriteLine(i);
+
+}
+
+Para um valor de i igual a 0, repita o loop enquanto o valor de i for menor a 5, incremente em 1 o valor 
+de i a cada iteração.
+
+
+
+Visual Studio > for mais duas vezes a tecla tab, completa o for.
+
+
+
+INSTRUÇÃO WHILE
+Estrutura de repetição onde o bloco de código é executado toda vez que uma condição booleana (true/false) é satisfeita.
+
+Enquanto i valer menos que 5, repita!
+
+int i=0;
+
+while (i < 5){
+	Console.WriteLine(i);
+	++i;
+}
+
+Não existe contador no cabeçalho da instrução!
+
+While é muito indicado para quando temos condições booleanas.
+
+string[] nomes = new string [5]{ "Paulo", "Eduardo", "Francisco","João","Pedro"};
+int I =0;
+
+while (nomes[i] != ""){
+
+	Console.WriteLine(nomes[i]);
+	++i;
+
+}
+
+
+DO WHILE
+
+É uma estrutura de repetição onde o bloco de código é executado pelo menos uma vez e logo após
+é que uma condição booleana (true/false) é satisfeita.
+
+Faça, bloco de código, enquanto i valer menos que 5, repita.
+
+
+int i=0;
+
+Do {
+
+	Console.WriteLine(i);
+	i++;
+
+} while (i < 5);
+
+
+Instrução BREAK
+
+É uma instrução que quebra imediatamente a execução de um loop.
+
+int i = 0;
+do {
+	Console.WriteLine(i);
+	i++;
+	if(i <5)
+		break
+
+}while(true);
+
+
+
 
 
 19. Recapitulando
