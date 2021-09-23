@@ -1,0 +1,69 @@
+Seção 5: C# Avançado
+
+
+28. O que vamos aprender nesta seção?
+
+
+29. Algoritmos de ordenação.
+
+
+Algoritmo é um processo de resolução de uma determinada tarefa para a qual ele foi designado.
+
+Uma "fórmula" para resolver um problema.
+
+
+
+Um algoritmo de ordenação têm como objetivo realizar a ordenação de uma lista de valores.
+
+
+BUBBLE SORT - Flutua o elemento maior até o fim da lista
+
+É um algoritmo de ordenação simples que tem como característica percorrer a lista várias vezes e a cada passagem
+faz "flutuar" para o topo o maior elemento da sequência.
+
+
+A lógica utilizada
+Temos três valores que não estão em ordem(9,5,7).
+O 9 é o maior e neste caso seria o último algarismo dos três.
+
+Para efetuar a ordenação, temos que perguntar se o algarismo da direita é maior que o da
+esquerda e dependendo da resposta é feita uma troca de posição no próprio vetor, utilizando
+uma variável auxiliar, assim será trocado o algarismo que for maior com o menor,
+colocando o maior sempre para a direita até achar um númério que não seja menor que ele.
+
+
+Pseudocódigo
+
+É o exercício de escrever a lógica de um sistema, a lógica de programação, usando linguagem natural.
+
+Esse pseudocódigo poderá ser traduzido para um código de verdade mais facilmente depois.
+
+Obriga a pensar na resolução do problema antes de realmente escrever o código.
+
+
+
+Do problema anterior, podemos escrever o seguinte pseudocódigo:
+
+definição do vetor contendo números em desordem
+definição variável auxiliar
+
+Para cada (elementos do vetor) //primeiro loop
+	para cada(elemento do vetor) //segundo loop para encontrar menor valor
+	se (elemento_do_vetor_primeiro_loop < elemento_vetor_segundo_loop)
+	//faça a troca dos elementos no vetor do primeiro loop
+	varauxiliar igual a elemento_do_vetor_primeiro_loop;
+	elemento_do_vetor_primeiro_loop igual elemento_vetor_segundo_loop
+	elemento_vetor_segundo_loop igual varauxiliar
+
+
+AlgoritmoDeOrdenacao
+
+
+
+30. Algoritmo de busca binária.
+
+
+31. Algoritmo de "Corte e Controle".
+
+
+32. Recapitulando

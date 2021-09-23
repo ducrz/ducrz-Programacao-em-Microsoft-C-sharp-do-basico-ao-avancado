@@ -1,0 +1,7 @@
+C:\Users\eduardo\source\repos\ducrz\ducrz-Programacao-em-Microsoft-C-sharp-do-basico-ao-avancado\AlgoritmoDeOrdenacao\AlgoritmoDeOrdenacao\bin\Debug\AlgoritmoDeOrdenacao.exe.config
+C:\Users\eduardo\source\repos\ducrz\ducrz-Programacao-em-Microsoft-C-sharp-do-basico-ao-avancado\AlgoritmoDeOrdenacao\AlgoritmoDeOrdenacao\bin\Debug\AlgoritmoDeOrdenacao.exe
+C:\Users\eduardo\source\repos\ducrz\ducrz-Programacao-em-Microsoft-C-sharp-do-basico-ao-avancado\AlgoritmoDeOrdenacao\AlgoritmoDeOrdenacao\bin\Debug\AlgoritmoDeOrdenacao.pdb
+C:\Users\eduardo\source\repos\ducrz\ducrz-Programacao-em-Microsoft-C-sharp-do-basico-ao-avancado\AlgoritmoDeOrdenacao\AlgoritmoDeOrdenacao\obj\Debug\AlgoritmoDeOrdenacao.csproj.AssemblyReference.cache
+C:\Users\eduardo\source\repos\ducrz\ducrz-Programacao-em-Microsoft-C-sharp-do-basico-ao-avancado\AlgoritmoDeOrdenacao\AlgoritmoDeOrdenacao\obj\Debug\AlgoritmoDeOrdenacao.csproj.CoreCompileInputs.cache
+C:\Users\eduardo\source\repos\ducrz\ducrz-Programacao-em-Microsoft-C-sharp-do-basico-ao-avancado\AlgoritmoDeOrdenacao\AlgoritmoDeOrdenacao\obj\Debug\AlgoritmoDeOrdenacao.exe
+C:\Users\eduardo\source\repos\ducrz\ducrz-Programacao-em-Microsoft-C-sharp-do-basico-ao-avancado\AlgoritmoDeOrdenacao\AlgoritmoDeOrdenacao\obj\Debug\AlgoritmoDeOrdenacao.pdb
