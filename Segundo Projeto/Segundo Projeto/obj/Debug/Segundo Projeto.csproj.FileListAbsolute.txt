@@ -1,0 +1,7 @@
+C:\Users\eduardo\source\repos\ducrz\ducrz-Programacao-em-Microsoft-C-sharp-do-basico-ao-avancado\Segundo Projeto\Segundo Projeto\bin\Debug\Segundo Projeto.exe.config
+C:\Users\eduardo\source\repos\ducrz\ducrz-Programacao-em-Microsoft-C-sharp-do-basico-ao-avancado\Segundo Projeto\Segundo Projeto\bin\Debug\Segundo Projeto.exe
+C:\Users\eduardo\source\repos\ducrz\ducrz-Programacao-em-Microsoft-C-sharp-do-basico-ao-avancado\Segundo Projeto\Segundo Projeto\bin\Debug\Segundo Projeto.pdb
+C:\Users\eduardo\source\repos\ducrz\ducrz-Programacao-em-Microsoft-C-sharp-do-basico-ao-avancado\Segundo Projeto\Segundo Projeto\obj\Debug\Segundo Projeto.csproj.AssemblyReference.cache
+C:\Users\eduardo\source\repos\ducrz\ducrz-Programacao-em-Microsoft-C-sharp-do-basico-ao-avancado\Segundo Projeto\Segundo Projeto\obj\Debug\Segundo Projeto.csproj.CoreCompileInputs.cache
+C:\Users\eduardo\source\repos\ducrz\ducrz-Programacao-em-Microsoft-C-sharp-do-basico-ao-avancado\Segundo Projeto\Segundo Projeto\obj\Debug\Segundo Projeto.exe
+C:\Users\eduardo\source\repos\ducrz\ducrz-Programacao-em-Microsoft-C-sharp-do-basico-ao-avancado\Segundo Projeto\Segundo Projeto\obj\Debug\Segundo Projeto.pdb

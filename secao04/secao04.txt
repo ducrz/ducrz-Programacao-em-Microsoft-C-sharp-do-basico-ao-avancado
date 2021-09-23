@@ -1,0 +1,69 @@
+Seção 4: C# Intermediário
+
+
+Segundo Projeto.
+
+
+20. O que vamos aprender nesta seção?
+
+
+
+21. Conversão entre tipos de dados
+
+
+Conversão implícita e explícita.
+
+Conversões implícitas acontecem automaticamente, o compilador tenta "adivinhar" o tipo e realizar uma conversão.
+
+Nas conversões explícitas é o programador que indica ao compilador qual tipo de conversão será realizada.
+
+Um dos tipos de conversões mais frequentes é a conversão em String.
+
+Datetime data = DateTime.Now
+
+Console.Write(data.ToString());
+
+
+
+Exemplo de conversão implícita:
+
+
+int i =5;
+DateTime data = DateTime.Now;
+Console.WriteLine(i);
+Console.WriteLine(data);
+
+
+Outro exemplo(neste caso não funciona):
+
+int i = 5;
+
+DateTime data = DateTime.Now;
+
+Console.WriteLine(i+data);
+
+
+Neste caso é necessário a conversão explícita:
+
+int i=5;
+DateTime data = DateTime.Now;
+
+Console.WriteLine(i.ToString() + data);
+
+Agora o compilador sabe que o que queremos é mostrar os valores como string.
+O valor de "i" é convertido explicitamente, já o "data" é convertido implicitamente pelo compilador.
+
+
+
+
+22. Operações úteis em strings
+
+23. Criando funções em C#
+
+24. Aplicações console e debug de aplicações
+
+25. Manipulando listas, arrays e vetores
+
+26. Tratamento de erros
+
+27. Recapitulando
