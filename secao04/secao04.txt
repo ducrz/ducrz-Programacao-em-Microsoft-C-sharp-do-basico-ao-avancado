@@ -456,4 +456,129 @@ Console.WriteLine("O Índice do item 'verde' é "+ind);
 
 26. Tratamento de erros
 
+Tratamento de Exceções
+
+Uma exceção não é necessariamente um erro, é uma exceção, um caminho dentro da lógica do programa
+onde algo inesperado aconteceu.
+
+Essas exceções precisam ser tratadas para evitar falhas no programa.
+
+O C# fornece suporte interno para lidar com exceções usando o try, catch e finally.
+
+
+Para tratar exceções no C#, coloca-se o código "cercado" por um bloco try-catch.
+
+As declarações de variáveis devem sempre ficar fora do bloco try, para que possam ser acessadas
+nos blocos catch e finally.
+
+O bloco try simplesmente informa ao compilador para monitorar o código em busca de uma exceção.
+
+A exceção gerada no bloco try deve ser tratada usando o bloco catch.
+
+Sintaxe:
+
+try{
+	//Codigo
+
+}
+catch(Exception ex){
+
+	//Tratar Exception
+}
+
+
+O bloco try deve ser seguido por catch ou finally, ou ambos os blocos.
+
+O bloco try sem um catch ou finally dará um erro de tempo de compilação.
+
+A exceção gerada no bloco try pode ser manipulada usando o bloco catch, como mostrado no exemplo acima.
+
+O código no bloco catch será executado apenas quando ocorrer uma exceção.
+
+Um bloco catch múltiplo também pode ser especificado com um tipo de exceção diferente, chamado de
+filtro de exceção.
+
+Um bloco de cath múltiplo é útil quando você deseja manipular exceções diferentes de maneiras distintas.
+
+
+
+catch(DivideByZeroException ex){
+	LogError(ex);
+	Console.Write("Impossível dividir por 0.");
+}
+catch (InvalidOperationException ex){
+	LogError(ex);
+	Console.Write("Erro, operação inválida.");
+}
+catch (FormatException ex){
+	LogError(ex);
+	Console.Write("Erro de Formato Numérico.");
+}
+
+
+
+FINALLY
+
+O bloco finally deve vir após um bloco try ou catch.
+
+O bloco finally sempre será executado, independente de uma exceção ser lançada ou não.
+
+O bloco finally é geralmente usado para limpeza de código, para descartar objetos não gerenciados, ou seja,
+para realizar uma última operação antes de sair do método.
+
+
+
+try{
+
+	//Código
+}
+catch(Exception ex){
+	//Tratar Exception
+}
+finally{
+
+	//Fim
+}
+
+
+Nested try-catch
+
+O C# permite blocos try-catch aninhados.
+
+No bloco try-catch aninhado, uma exceção será capturada no bloco catch que segue o bloco try em 
+que ocorreu uma exceção.
+
+
+
+Exemplo: Nested try-catch
+
+static void main(string[] args)
+{
+	Pessoa pessoa = null;
+
+	try{
+		try{
+			pessoa.nome= "";
+
+		}
+		catch{
+			Console.WriteLine("Erro ao armazenar o nome.");
+		}
+
+	}
+	catch{
+		Console.WriteLine("Exceção de Sistema.");
+	}
+
+
+}
+
+
+try 2xtab
+
+
+
 27. Recapitulando
+
+
+Fim Seção 04.

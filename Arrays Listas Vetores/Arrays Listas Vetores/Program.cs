@@ -21,21 +21,21 @@ namespace Arrays_Listas_Vetores
 
             //}
 
+            ////Buscando Nome
+            //Console.WriteLine();
+            //Console.WriteLine("Buscar um nome: ");
 
-            Console.WriteLine();
-            Console.WriteLine("Buscar um nome: ");
-
-            string nomeBuscar = Console.ReadLine();
-
-
-
-            int posicao = Array.IndexOf(nomes,nomeBuscar.ToLower());
+            //string nomeBuscar = Console.ReadLine();
 
 
-            if (posicao >= 0)
-                Console.WriteLine($"Achei o nome: {nomes[posicao]} na posição: {posicao}");
-            else
-                Console.WriteLine("Nome não encontrado!");
+
+            //int posicao = Array.IndexOf(nomes,nomeBuscar.ToLower());
+
+
+            //if (posicao >= 0)
+            //    Console.WriteLine($"Achei o nome: {nomes[posicao]} na posição: {posicao}");
+            //else
+            //    Console.WriteLine("Nome não encontrado!");
             ////Busca "Manual"
             //Console.WriteLine("Buscar um nome: ");
 
@@ -75,7 +75,42 @@ namespace Arrays_Listas_Vetores
 
             //Console.WriteLine("Fim da Lista");
 
-            Console.ReadKey();
+
+            //Try Catch Finally
+            try
+            {
+                Console.WriteLine();
+                Console.WriteLine("Buscar um nome: ");
+
+                string nomeBuscar = Console.ReadLine();
+
+
+
+                int posicao = Array.IndexOf(nomes, nomeBuscar.ToLower());
+
+
+                Console.WriteLine($"Achei o nome: {nomes[posicao]} na posição: {posicao}");
+
+                int valor = 0;
+                int res = 10 / valor;
+                
+            }
+
+            catch (DivideByZeroException)
+            {
+                Console.WriteLine("Não é permitido dividir por zero! ");
+
+                //log
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("O Nome não foi encontrado! ");
+                //log
+            }
+            finally
+            {
+                Console.ReadKey();
+            }
         }
     }
 }
