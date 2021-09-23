@@ -128,6 +128,60 @@ Replace
 
 23. Criando funções em C#
 
+
+Funções são usadas para:
+
+- Organizar código;
+- Evitar duplicação de código;
+- Reutilização de código;
+- Legibilidade de código;
+
+
+
+Estrutura de uma função:
+
+<visibility> <return type> <name>(<parameters>)
+{
+	<function code>
+}
+
+Para utilizar uma função:
+
+MostrarNome();
+
+Exemplo de função MostrarNome():
+
+public void MostrarNome(){
+
+	Console.WriteLine("Meu nome é: Eduardo");
+}
+
+
+Também é possível retornar valores:
+
+public int Somatoria(int numero1, int numero2){
+
+	int resultado = numero1 + numero2;
+	return resultado;
+}
+
+
+
+Funcoes.cs
+
+
+Comentários em funções.
+
+        ///<Summary>
+        ///Esta função soma dois números e retorna o resultado
+        ///</Summary>
+	///<param name="numero1"> Primeiro Valor inteiro </param>
+	///<param name="numero2"> Segundo valor inteiro </param>
+	///<returns>Retorna a soma dos números passados por parâmetro.</returns>
+
+
+
+
 24. Aplicações console e debug de aplicações
 
 25. Manipulando listas, arrays e vetores
