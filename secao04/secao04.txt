@@ -58,6 +58,74 @@ O valor de "i" é convertido explicitamente, já o "data" é convertido implicitame
 
 22. Operações úteis em strings
 
+
+Manipulação de strings, ou seja, operações de formatação e de dados.
+
+Utilidade:
+
+- Para criar um "parser" de um log;
+- Manipular informações armazenadas em um banco de dados;
+= Manipular ou criar strings em formato json;
+- Manipular formato de data/hora
+- Demais operações necessárias.
+
+
+Algumas das funções com strings suportadas pelo C#:
+
+SubString
+Trim
+TrimLeft
+TrimRigth
+Length
+Replace
+Constains
+IndexOf
+
+
+
+Concatenaço:
+
+Concat(String,String)
+
++
+StringBuilder
+
+StringBuilder sb = new StringBuilder();
+sb.Append("texto 1");
+sb.Append("texto 2");
+Console.WriteLine("Resultado "+sb);
+
+
+
+Concatenação String.Format
+
+Permite a criação de uma string baseada em um padrão. Podemos colocar dentro do padrão
+da string de formatação alguns tokens que podem ser substituídos por variáveis passadas por
+parâmetro no comando format.
+
+
+string teste = String.Format("Vou colocar o {0} aqui.",""Parâmetro");
+
+
+sTeste = String.Format("Formatação de string com {0} parâmetro.","Agora são {1}. Valor numérico: {2}",
+1, Now(), 15.5);
+
+
+sTeste = String.Format("Custom Format: {0:d/M/yyy HH:mm:ss}",dtHoje);
+sTeste = String.Format("Formatação do número inteiro: {0:D}.",iNumero);
+sTeste = String.Format("Formatação do número inteiro: {0:D4}.",iNumero);
+
+
+
+Formatação:
+
+ToLower
+ToUpper
+Replace
+
+
+
+
 23. Criando funções em C#
 
 24. Aplicações console e debug de aplicações
