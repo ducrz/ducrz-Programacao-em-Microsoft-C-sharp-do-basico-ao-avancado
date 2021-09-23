@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arrays Listas Vetores", "Arrays Listas Vetores\Arrays Listas Vetores.csproj", "{664E2115-6EC4-4B3C-9810-3DE765C40A92}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{664E2115-6EC4-4B3C-9810-3DE765C40A92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{664E2115-6EC4-4B3C-9810-3DE765C40A92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{664E2115-6EC4-4B3C-9810-3DE765C40A92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{664E2115-6EC4-4B3C-9810-3DE765C40A92}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {65B550A5-A03D-4E91-BCD1-F97FAF23708A}
+	EndGlobalSection
+EndGlobal

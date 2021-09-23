@@ -1,0 +1,7 @@
+C:\Users\eduardo\source\repos\ducrz\ducrz-Programacao-em-Microsoft-C-sharp-do-basico-ao-avancado\Arrays Listas Vetores\Arrays Listas Vetores\bin\Debug\Arrays Listas Vetores.exe.config
+C:\Users\eduardo\source\repos\ducrz\ducrz-Programacao-em-Microsoft-C-sharp-do-basico-ao-avancado\Arrays Listas Vetores\Arrays Listas Vetores\bin\Debug\Arrays Listas Vetores.exe
+C:\Users\eduardo\source\repos\ducrz\ducrz-Programacao-em-Microsoft-C-sharp-do-basico-ao-avancado\Arrays Listas Vetores\Arrays Listas Vetores\bin\Debug\Arrays Listas Vetores.pdb
+C:\Users\eduardo\source\repos\ducrz\ducrz-Programacao-em-Microsoft-C-sharp-do-basico-ao-avancado\Arrays Listas Vetores\Arrays Listas Vetores\obj\Debug\Arrays Listas Vetores.csproj.AssemblyReference.cache
+C:\Users\eduardo\source\repos\ducrz\ducrz-Programacao-em-Microsoft-C-sharp-do-basico-ao-avancado\Arrays Listas Vetores\Arrays Listas Vetores\obj\Debug\Arrays Listas Vetores.csproj.CoreCompileInputs.cache
+C:\Users\eduardo\source\repos\ducrz\ducrz-Programacao-em-Microsoft-C-sharp-do-basico-ao-avancado\Arrays Listas Vetores\Arrays Listas Vetores\obj\Debug\Arrays Listas Vetores.exe
+C:\Users\eduardo\source\repos\ducrz\ducrz-Programacao-em-Microsoft-C-sharp-do-basico-ao-avancado\Arrays Listas Vetores\Arrays Listas Vetores\obj\Debug\Arrays Listas Vetores.pdb

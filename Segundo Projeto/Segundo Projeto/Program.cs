@@ -132,6 +132,9 @@ namespace Segundo_Projeto
             Console.WriteLine(sb);
 
             Console.ReadKey();
+
+
+
         }
     }
 }
