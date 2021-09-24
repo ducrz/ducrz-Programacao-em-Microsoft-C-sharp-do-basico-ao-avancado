@@ -96,4 +96,45 @@ Projeto AlgoritmoDeBuscaBinaria
 31. Algoritmo de "Corte e Controle".
 
 
+CORTE E CONTROLE
+
+É um algoritmo usado para listar e totalizar valores, agrupados por categoria ou outro parâmetro.
+
+Os elementos da lista precisar estar ordenados.
+
+Muito útil para "relatórios", quando a lista precisa estar ordenada.
+
+
+Problema
+
+O cliente quer imprimir um relatório na tela com totais por produto e total geral.
+
+
+
+Pseudocódigo
+
+definição de variáveis de total geral, subtotal por produto, contador, produto atual, produto anterior;
+
+while(tem_elementos_no_array){
+	id_anterior = id_atual = valorDoIdProdutoArray
+	while(tem_elementos_no_array AND id_anterior === id_atual){
+		[imprimir linha de produto]
+		[incrementar total produto]
+		[avançar leitura]
+	}
+	[imprimir total primeiro corte]
+	[incrementar total geral]
+}
+[imprimir total geral]
+
+
+CTRL + RR - Para alterar o nome de uma variável em todos os locais do código.
+
+Projeto AlgoritmoCorteEControle
+
+
+
+
 32. Recapitulando
+
+Fim Seção 05.

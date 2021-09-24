@@ -1,0 +1,7 @@
+C:\Users\eduardo\source\repos\ducrz\ducrz-Programacao-em-Microsoft-C-sharp-do-basico-ao-avancado\AlgoritmoCorteEControle\AlgoritmoCorteEControle\bin\Debug\AlgoritmoCorteEControle.exe.config
+C:\Users\eduardo\source\repos\ducrz\ducrz-Programacao-em-Microsoft-C-sharp-do-basico-ao-avancado\AlgoritmoCorteEControle\AlgoritmoCorteEControle\bin\Debug\AlgoritmoCorteEControle.exe
+C:\Users\eduardo\source\repos\ducrz\ducrz-Programacao-em-Microsoft-C-sharp-do-basico-ao-avancado\AlgoritmoCorteEControle\AlgoritmoCorteEControle\bin\Debug\AlgoritmoCorteEControle.pdb
+C:\Users\eduardo\source\repos\ducrz\ducrz-Programacao-em-Microsoft-C-sharp-do-basico-ao-avancado\AlgoritmoCorteEControle\AlgoritmoCorteEControle\obj\Debug\AlgoritmoCorteEControle.csproj.AssemblyReference.cache
+C:\Users\eduardo\source\repos\ducrz\ducrz-Programacao-em-Microsoft-C-sharp-do-basico-ao-avancado\AlgoritmoCorteEControle\AlgoritmoCorteEControle\obj\Debug\AlgoritmoCorteEControle.csproj.CoreCompileInputs.cache
+C:\Users\eduardo\source\repos\ducrz\ducrz-Programacao-em-Microsoft-C-sharp-do-basico-ao-avancado\AlgoritmoCorteEControle\AlgoritmoCorteEControle\obj\Debug\AlgoritmoCorteEControle.exe
+C:\Users\eduardo\source\repos\ducrz\ducrz-Programacao-em-Microsoft-C-sharp-do-basico-ao-avancado\AlgoritmoCorteEControle\AlgoritmoCorteEControle\obj\Debug\AlgoritmoCorteEControle.pdb
