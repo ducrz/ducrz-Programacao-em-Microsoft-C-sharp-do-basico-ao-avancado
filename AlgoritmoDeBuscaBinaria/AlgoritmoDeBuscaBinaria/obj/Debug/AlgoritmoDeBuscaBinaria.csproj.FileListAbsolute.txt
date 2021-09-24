@@ -1,0 +1,7 @@
+C:\Users\eduardo\source\repos\ducrz\ducrz-Programacao-em-Microsoft-C-sharp-do-basico-ao-avancado\AlgoritmoDeBuscaBinaria\AlgoritmoDeBuscaBinaria\bin\Debug\AlgoritmoDeBuscaBinaria.exe.config
+C:\Users\eduardo\source\repos\ducrz\ducrz-Programacao-em-Microsoft-C-sharp-do-basico-ao-avancado\AlgoritmoDeBuscaBinaria\AlgoritmoDeBuscaBinaria\bin\Debug\AlgoritmoDeBuscaBinaria.exe
+C:\Users\eduardo\source\repos\ducrz\ducrz-Programacao-em-Microsoft-C-sharp-do-basico-ao-avancado\AlgoritmoDeBuscaBinaria\AlgoritmoDeBuscaBinaria\bin\Debug\AlgoritmoDeBuscaBinaria.pdb
+C:\Users\eduardo\source\repos\ducrz\ducrz-Programacao-em-Microsoft-C-sharp-do-basico-ao-avancado\AlgoritmoDeBuscaBinaria\AlgoritmoDeBuscaBinaria\obj\Debug\AlgoritmoDeBuscaBinaria.csproj.AssemblyReference.cache
+C:\Users\eduardo\source\repos\ducrz\ducrz-Programacao-em-Microsoft-C-sharp-do-basico-ao-avancado\AlgoritmoDeBuscaBinaria\AlgoritmoDeBuscaBinaria\obj\Debug\AlgoritmoDeBuscaBinaria.csproj.CoreCompileInputs.cache
+C:\Users\eduardo\source\repos\ducrz\ducrz-Programacao-em-Microsoft-C-sharp-do-basico-ao-avancado\AlgoritmoDeBuscaBinaria\AlgoritmoDeBuscaBinaria\obj\Debug\AlgoritmoDeBuscaBinaria.exe
+C:\Users\eduardo\source\repos\ducrz\ducrz-Programacao-em-Microsoft-C-sharp-do-basico-ao-avancado\AlgoritmoDeBuscaBinaria\AlgoritmoDeBuscaBinaria\obj\Debug\AlgoritmoDeBuscaBinaria.pdb

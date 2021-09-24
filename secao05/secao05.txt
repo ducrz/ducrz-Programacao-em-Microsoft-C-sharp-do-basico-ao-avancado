@@ -56,11 +56,41 @@ Para cada (elementos do vetor) //primeiro loop
 	elemento_vetor_segundo_loop igual varauxiliar
 
 
-AlgoritmoDeOrdenacao
+Projeto AlgoritmoDeOrdenacao
 
 
 
 30. Algoritmo de busca binária.
+
+
+Busca Binária
+
+A busca binária é um algoritmo de busca que segue o paradigma de divisão e conquista.
+
+Partindo do pressuposto de que o conjunto de elementos está ordenado, são executadas
+diversas divisões do espaço de busca, restringindo o possível local no qual o elemento
+buscado está posicionado.
+
+
+
+Pseudocódigo
+
+definição do vetor contendo números em ordem
+definição variáveis sup, inf, meio
+int = -1;
+sup = vetor.Length
+
+Enquanto (inf < sup -1)
+	meio = (inf+sup)/2;
+	Se(vetor[meio] < valorBuscado)
+		inf = meio
+	Senão
+		sup = meio;
+
+
+Projeto AlgoritmoDeBuscaBinaria
+
+
 
 
 31. Algoritmo de "Corte e Controle".
