@@ -1,0 +1,148 @@
+Seção 7: Orientação a Objetos com C# - Parte 1
+
+
+34. O que vamos aprender nesta seção?
+
+35. Introdução à Orientação a Objetos
+
+
+ORIENTAÇÃO A OBJETOS
+
+A orientação a objetos é um paradigma de análise, projeto e programação de sistemas de software baseado
+na composição e interação entre diversas unidades de software chamadas de objetos.
+
+Na programação orientada a objetos, implementa-se um conjunto de classes que definem os objetos presentes
+no sistema de software.
+
+Em cada classe determinamos o seu comportamento e estados possíveis.
+
+Também o relacionamento com outros objetos.
+
+
+Conceitos
+
+Classe representa um conjunto de objetos com características afins. Uma classe define o comportamento
+dos objetos e quais estados ele é capaz de manter através de seus atributos. Exemplos de classe:
+
+Os seres humanos, carros, casas, navios, etc.
+
+Subclasse é uma nova classe que herda características de sua(s) classe(s) ancestral(is).
+
+Um objeto é uma implementação de uma classe.
+
+
+Classe: Define uma família de objetos.
+
+Objeto: Implementa uma classe.
+
+
+Exemplos:
+
+
+CLASSES
+________
+
+
+VEÍCULOS > CARROS
+	 > NAVIOS
+
+
+
+PESSOA > PESSOA FÍSICA
+       > PESSOA JURÍDICA
+
+
+
+DOCUMENTO > RG
+          > TÍTULO DE ELEITOR
+
+
+
+
+
+36. Declarando classes
+
+Criação de classes
+
+CLASSE representa um conjunto de objetos com características afins.
+Uma classe define o comportamento dos objetos, e quais estados ele é capaz de manter.
+
+Exemplo de classe:
+
+CARROS
+
+Subclasse é uma nova classe que herda características de sua classe ancestral.
+
+
+
+Para criar uma classem é preciso adicionar um arquivo de classe ao projeto.
+
+namespace OOP{
+	class Carro{
+
+	}
+}
+
+
+
+Modificadores de Acesso:
+
+Na OOP pode-se restringir o acsso a um membro de uma classe e ter assim mais controles sobre o conteúdo da classe.
+
+
+Public- Os membros da classe não possuem qualquer restrição e podem ser acessados por qualquer programa.
+
+
+Private - Os membros somente podem ser acessados à partir da própria classe.
+
+Protected- Os membros são acessíveis à partir da própria classe e das classes derivadas.
+
+Friend- Os membros são acessíveis somente dentro do programa que possuem a declaração da classe.
+
+Protected Friend- Os membros são acessados somente pelo código de dentro do projeto e pelo código
+na classe derivada.
+
+
+CLASSE ABSTRATA
+
+É uma classe que não terá implementação no "mundo real", é uma classe da qual futuramente vão derivar classes que estas sim
+terão implementação real.
+
+Podemos, por exemplo, ter uma classe abstrata Pessoa da qual herdarão as classes Física e Jurídica,
+cada uma com seu próprio comportamento.
+
+
+CLASSES
+
+
+PESSOA > PESSOA FÍSICA
+       > PESSOA JURÍDICA
+
+
+Projeto ObjectOrientedProgramming
+
+
+Solution Explorer > Add > New Item
+
+Pessoa.cs
+
+PessoaFisica.cs
+
+PessoaJuridica.cs
+
+
+New Folder - Organizar Classes.
+
+
+
+37. Declarando atributos
+
+38. Declarando métodos
+
+39. Instanciando objetos
+
+40. Método construtor
+
+41. Encapsulamento
+
+42. Recapitulando
