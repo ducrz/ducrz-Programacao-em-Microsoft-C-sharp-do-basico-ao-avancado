@@ -2,5 +2,6 @@
 {
     public class PessoaJuridica
     {
+        public string CNPJ { get; set; }
     }
 }

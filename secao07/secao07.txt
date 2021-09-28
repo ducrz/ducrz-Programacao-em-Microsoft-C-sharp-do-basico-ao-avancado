@@ -135,7 +135,74 @@ New Folder - Organizar Classes.
 
 
 
-37. Declarando atributos
+37. Declarando atributos.
+
+ATRIBUTOS são as características de um objeto.
+
+Basicamente a estrutura de dados que vão representar a classe.
+
+Exemplos: Funcionário: nome, endereco, telefone, cpf;
+	  Carro: nome, marca, ano, cor;
+	  Livro: autor, editora, ano.
+
+Os atributos possuem valores. Por exemplo, o atributor cor pode conter o valor azul.
+O conjunto de valores dos atributos de um determinado objeto é chamado de estado.
+
+
+ATRIBUTO define as características de uma classe.
+
+
+Pessoa(Classe Abstrata)            > Pessoa Física        > Pessoa Jurídica
+-Nome: String                       -CPF: String           - CNPJ: String
+
+Exemplos
+
+Como criar propriedades?
+
+Adicionamento uma linha de código na classe:
+
+namespace OOP {
+
+	class Carro {
+		String Marca {get; set;}
+	}
+}
+
+
+Acesso
+
+
+É possível aplicar modificadores de acesso.
+
+//Public
+public string CPF { get; set;}
+
+//Private
+private string Tipo {get; }
+
+
+Possível também manipular get e set.
+
+//Atributo Read/Write
+public string CPF {get; set;}
+
+//Atributo Readonly
+public string Tipo {get; }
+
+
+Dica: prop 2xTab
+
+
+Pessoa.cs
+
+        public string Nome { get; set; }
+
+        public string Sobrenome { get; set; }
+
+        public int Idade { get; set; }
+
+
+
 
 38. Declarando métodos
 
