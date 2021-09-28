@@ -203,8 +203,128 @@ Pessoa.cs
 
 
 
-
 38. Declarando métodos
+
+Definindo comportamento de classes.
+
+
+MÉTODOS definem as habilidades dos objetos.
+
+Viatura1 é uma instância da classe Carro, portanto ele pode, por exemplo, "dar partida" 
+ou "acelerar", através dos métodos "DarPartida" e "Acelerar".
+
+Um MÉTODO em uma classe é apenas uma definição.
+
+A ação só ocorre quando o método é invocado através do objeto, no caso Viatura1.
+
+Dentro do programa, a utilização de um método deve afetar apenas um objeto em particular.
+
+Todos os carros podem dar partida, mas você quer que apenas a Viatura1 dê partida.
+
+Normalmente, uma classe possui diversos métodos, que no caso da classe Carro poderiam ser
+"DarPartida", "Acelerar" e "Parar", etc.
+
+
+CLASSE: define uma família de objetos.
+
+OBJETO: implementa uma classe.
+
+ATRIBUTO: define as características de uma classe.
+
+MÉTODO: define o que aquela classe pode ou não realizar.
+
+
+Para adicionar uma funcionalidade em uma classe, é possível adicionar uma função:
+
+
+namespace OOP{
+
+	class Carro{
+		String Marca {get; set; }	
+
+		void DarPartida(){
+
+		}
+	}
+}
+
+
+CLASSES
+
+
+PESSOA                   PESSOA FÍSICA         PESSOA JURÍDICA
+-Nome:String             - CPF:String          -CNPJ: String
+ValidarDocumento          ValidarCPF            ValidarCNPJ
+
+
+
+Veiculo.cs
+Carro.cs
+
+ASSINATURAS DE MÉTODO
+
+Os métodos são declarados em uma classe especificando o nível de acesso, como public ou private,
+modificadores opcionais, como abstract ou sealed, o valor retornado, o nome do método e os
+parâmetros de método.
+
+Junas, estas partes são a assinatura do método.
+
+
+Obs: Um tipo de retorno de um método não faz parte da assinatura do método para fins de sobrecarga 
+de método.
+No entando, ele faz parte da assinatura do método.
+
+
+Argumentos por referência ou por valor
+
+Métodos com argumentos por referência e por valor:
+
+public static void Main(){
+
+	int valor=40;
+	
+	func(ref valor);
+	
+	Console.WriteLine("Hello World " + valor);
+}
+
+public static void func(ref int val){
+
+	val++;
+
+}
+
+Parâmetros Opcionais
+
+Métodos com parâmetros opcionais
+
+public static voi Main(){
+
+	int valor = 40;
+	func(ref valor);
+	
+	Console.WriteLine("Hello World "+valor);
+
+}
+
+public static void func(ref int val, int incremento=0){
+
+	if(incremento == 0)
+		val++;
+	else
+		val= val +incremento;
+
+}
+
+Program.cs
+
+TIPOS DE CLASSES
+
+
+Tipos de Classes são passados por referência.
+
+Objetos são sempre passados por referência.
+
 
 39. Instanciando objetos
 

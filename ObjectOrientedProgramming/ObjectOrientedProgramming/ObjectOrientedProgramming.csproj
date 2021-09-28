@@ -43,6 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Carro.cs" />
+    <Compile Include="Classes\ClassesAbstratas\Veiculo.cs" />
     <Compile Include="Classes\ClassesAbstratas\Pessoa.cs" />
     <Compile Include="Classes\PessoaFisica.cs" />
     <Compile Include="Classes\PessoaJuridica.cs" />
