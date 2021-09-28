@@ -3,32 +3,49 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ObjectOrientedProgramming.Classes;
 
 namespace ObjectOrientedProgramming
 {
     class Program
     {
-        public static void Main(string[] args) {
-            int valor = 40;
-            Console.WriteLine("Insira um valor que será somado:");
-            int valorInseridoPeloUsuario = Convert.ToInt32(Console.ReadLine();
-      
+        public static void Main(string[] args)
+        {
 
-            SomarValor(ref valor, valorInseridoPeloUsuario);
+            Carro Nivus = new Carro()
+            {
+                Marca = "Volkswagem",
+                Cor = "Cinza",
+                Modelo = "2022",
+                Preco = 110
+            };
 
-            Console.WriteLine("Resultado: " +valor);
+            //Nivus.Marca = "Volkswagem";
+            //Nivus.Cor = "Cinza";
+            //Nivus.Modelo = "2022";
+            //Nivus.Preco = 110;
+
+            Console.WriteLine($"Primeiro Carro da Frota é: {Nivus.Marca}");
+
+            Nivus.Alugar();
+
+            Nivus.Alugar(); //Alugando pela segunda vez, forçando o erro
+
+
+            ////Operador Ternário
+            //string respostaAlugado = Nivus.EstaAlugado == true ? "Sim" : "Não";
+
+
+            //Console.WriteLine($"{Nivus.Marca} está alugado? {respostaAlugado}");
+
+            Console.WriteLine($"{Nivus.Marca} está alugado? {Nivus.EstadoAluguel()}");
+
 
             Console.ReadKey();
 
         }
 
-        private static void SomarValor(ref int valor, int intervalo =0) //Assinatura do Método
-        {
-            if (intervalo == 0)
-                valor++;
-            else
-                valor = valor + intervalo;
-        }
+
     }
 }
 

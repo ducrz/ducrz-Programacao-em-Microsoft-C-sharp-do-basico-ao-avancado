@@ -13,26 +13,29 @@ namespace ObjectOrientedProgramming.Classes
         public string Cor { get; set; }
         public bool EstaAlugado { get; set; }
 
+        public double Preco { get; set; }
+  
 
-        public void DarPartida()
-        {
-            Console.WriteLine("Carro Ligado! ");
-        }
-
-        public void Desligar()
-        {
-            Console.WriteLine("Carro Desligado! ");
-        }
         public void Alugar()
         {
-            EstaAlugado = true;
-            Console.WriteLine($"Carro { Marca } está Alugado! ");
+            if(EstaAlugado == true)
+                Console.WriteLine($"Carro { Marca } já está Alugado! Escolha Outro! ");
+            else
+            {
+                EstaAlugado = true;
+                Console.WriteLine($"Carro { Marca } está Alugado! ");
+            }
+      
         }
         public void RetornarCarro()
         {
             EstaAlugado = false;
             Console.WriteLine($"Carro { Marca } foi Devolvido! ");
 
+        }
+        public string EstadoAluguel()
+        {
+            return EstaAlugado == true ? "Sim" : "Não";
         }
     }
 }

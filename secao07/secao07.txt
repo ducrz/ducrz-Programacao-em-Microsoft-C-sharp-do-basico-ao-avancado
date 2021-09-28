@@ -326,7 +326,68 @@ Tipos de Classes são passados por referência.
 Objetos são sempre passados por referência.
 
 
+
 39. Instanciando objetos
+
+Em programação orientada a objetos, chama-se instância de uma classe, um objeto cujo comportamento
+e estado são definidos pela classe.
+
+O uso da palavra "instância" pode ter sido inspirado no inglês, tal palavra significa "caso" ou
+"exemplo", em inglês, instance.
+
+
+INSTÂNCIA DE UM OBJETO
+
+Imaginemos um objeto Pessoa, este objeto representa uma pessoa, mas se quiser dar um identidade a este objeto
+temos que instanciá-lo.
+
+É uma forma de representação de base de um grupo de objetos.
+
+CLASSES
+
+Uma classe é uma representação de base de um grupo de objetos.
+
+
+Um objeto é uma instância de uma classe.
+
+
+COMO É FEITO NO C#
+
+Lembrando que tudo no .NET é objeto, tudo vêm de uma classe.
+
+
+//Implementação da classe String num objeto chamado NUM
+String num = new String();
+
+
+//Chamando um método do objeto
+Var x = num.Trim();
+
+
+//Acessando uma propriedade do objeto
+var x = num.Length;
+
+
+
+//Implementação da classe Pessoa em um objeto chamado Han Solo
+Pessoa Han = new Pessoa();
+
+//Chamando um método do objeto
+Han.Atira();
+
+//Acessando uma propriedade do objeto
+Console.WriteLine(Han.Profissao);
+
+
+Exercícios
+
+Carro.cs e Program.cs
+
+Um objeto é uma instância de uma classe. Uma representação real de algo que o negócio precisa representar.
+
+Um objeto é uma representação real de uma classe.
+
+
 
 40. Método construtor
 
