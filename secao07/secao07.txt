@@ -511,7 +511,87 @@ Isto é chamado de ENCAPSULAMENTO.
 
 
 
-
 41. Encapsulamento
 
+
+É uma técnica de programação orientada a objetos que via "esconder" os detalhes
+da implementação de uma classe.
+
+Encapsulamento significa separar o programa em partes, as mais isoladas possíveis.
+
+Ajuda não permitir mudanças "indesejadas" no estado de objeto.
+
+Encapsulamento é sobre ter controle sobre as mudanças de estado de objetos.
+
+
+Na prática, encapsulamento permite expor publicamente somente o necessário, escondendo (encapsulando) o detalhe,
+o cabeamento, etc.
+
+Seria irresponsável deixar que qualquer um pudesse manipular o estado de uma classe / objeto.
+
+É recomendado deixar que a própria classe, seguindo um conjunto de regras bem definidas (encapsulamento),
+trate a sua própria mudança de estado.
+
+Tendo por exemplo um telefone celular, o usuário não precisa saber como tudo funciona internamente, uma vez que
+este usa a sua interface.
+
+Encapsulamento permite restringir o acesso ao código que realmente vai produzir mudanças.
+
+O encapsulamento reduz possibilidades de que sejam introduzidas inconsistências no código.
+
+
+
+Maintain proper encapsulation so that your code base doesn't even provide an option
+for you to do anything incorrectly.
+
+
+
+Encapsulamento no C#
+
+No nível de propriedades
+
+public int Numero { get; private set; }
+
+O get é público, mas o set é privado.
+
+Qualquer um que instancie a classe vai poder ler o valor de Numero, enquanto que a 
+atribuição de valores ficará escondida.
+
+
+No nível de métodos
+
+
+public void SomaSaldo(double Valor){
+
+	this.Saldo += Valor;
+}
+
+
+Assim o saldo sempre será calculado de acordo com as regras estabelecidas no método
+SomaSaldo, garantindo que sempre será usado o mesmo método de cálculo por todo o sistema.
+
+CONSISTÊNCIA.
+
+
+Carro.cs
+
+
+
+
 42. Recapitulando
+
+
+Introdução a Orientação a Objetos
+
+Declarando Classes
+
+Declarando Atributos
+
+Declarando Métodos
+
+Método Construtor
+
+Encapsulamento.
+
+
+

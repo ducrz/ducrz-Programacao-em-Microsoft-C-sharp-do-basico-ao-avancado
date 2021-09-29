@@ -8,18 +8,19 @@ namespace ObjectOrientedProgramming.Classes
 {
     class Carro
     {
-        public string Marca { get; set; }
-        public string Modelo { get; set; }
+        public string Marca { get; private set; }
+        public string Modelo { get; private set; }
         public string Cor { get; set; }
         public bool EstaAlugado { get; set; }
 
-        public double Preco { get; set; }
+        public double Preco { get; private set; }
   
         //Construtores
-        public Carro( string Marca, string Modelo)
+        public Carro(string Marca, string Modelo, double Preco)
         {
             this.Marca = Marca;
             this.Modelo = Modelo;
+            this.Preco = Preco;
         }
 
         public void Alugar()
@@ -42,6 +43,17 @@ namespace ObjectOrientedProgramming.Classes
         public string EstadoAluguel()
         {
             return EstaAlugado == true ? "Sim" : "Não";
+        }
+
+        public void MudarPrecoAluguel(double NovoPreco)
+        {
+            //Precisa de Aprovacao para Mudança de Preço
+            //if(novoPreco < preco)
+            this.Preco = NovoPreco;
+        }
+        public void AplicarDescontoAluguel(double Desconto)
+        {
+            this.Preco -= Desconto;
         }
     }
 }

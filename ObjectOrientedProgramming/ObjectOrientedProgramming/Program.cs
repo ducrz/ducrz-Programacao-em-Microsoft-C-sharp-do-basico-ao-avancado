@@ -12,12 +12,12 @@ namespace ObjectOrientedProgramming
         public static void Main(string[] args)
         {
 
-            Carro carro = new Carro("Volkswagem", "Nivus")
+            Carro carro = new Carro("Volkswagem", "Nivus", 110)
             {
                 //Marca = "Volkswagem",
                 // Cor = "Cinza",
                 //Modelo = "2022",
-                Preco = 110
+                //Preco = 110
             };
 
             //Nivus.Marca = "Volkswagem";
@@ -25,7 +25,13 @@ namespace ObjectOrientedProgramming
             //Nivus.Modelo = "2022";
             //Nivus.Preco = 110;
 
-            Console.WriteLine($"Primeiro Carro da Frota é: {carro.Marca} modelo { carro.Modelo}");
+
+            Console.Write("Insira o novo preço do aluguel: ");
+            var Preco = Convert.ToDouble(Console.ReadLine());
+
+            carro.MudarPrecoAluguel(Preco);
+
+            Console.WriteLine($"Primeiro Carro da Frota é: {carro.Marca} modelo { carro.Modelo} e com preço de aluguel { carro.Preco }");
 
             //Nivus.Alugar();
 
