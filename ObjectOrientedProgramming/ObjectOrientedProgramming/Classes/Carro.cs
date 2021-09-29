@@ -15,6 +15,12 @@ namespace ObjectOrientedProgramming.Classes
 
         public double Preco { get; set; }
   
+        //Construtores
+        public Carro( string Marca, string Modelo)
+        {
+            this.Marca = Marca;
+            this.Modelo = Modelo;
+        }
 
         public void Alugar()
         {

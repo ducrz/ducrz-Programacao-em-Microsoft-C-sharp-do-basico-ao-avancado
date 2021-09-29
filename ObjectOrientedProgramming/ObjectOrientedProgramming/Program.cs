@@ -12,11 +12,11 @@ namespace ObjectOrientedProgramming
         public static void Main(string[] args)
         {
 
-            Carro Nivus = new Carro()
+            Carro carro = new Carro("Volkswagem", "Nivus")
             {
-                Marca = "Volkswagem",
-                Cor = "Cinza",
-                Modelo = "2022",
+                //Marca = "Volkswagem",
+                // Cor = "Cinza",
+                //Modelo = "2022",
                 Preco = 110
             };
 
@@ -25,11 +25,11 @@ namespace ObjectOrientedProgramming
             //Nivus.Modelo = "2022";
             //Nivus.Preco = 110;
 
-            Console.WriteLine($"Primeiro Carro da Frota é: {Nivus.Marca}");
+            Console.WriteLine($"Primeiro Carro da Frota é: {carro.Marca} modelo { carro.Modelo}");
 
-            Nivus.Alugar();
+            //Nivus.Alugar();
 
-            Nivus.Alugar(); //Alugando pela segunda vez, forçando o erro
+            //Nivus.Alugar(); //Alugando pela segunda vez, forçando o erro
 
 
             ////Operador Ternário
@@ -38,7 +38,7 @@ namespace ObjectOrientedProgramming
 
             //Console.WriteLine($"{Nivus.Marca} está alugado? {respostaAlugado}");
 
-            Console.WriteLine($"{Nivus.Marca} está alugado? {Nivus.EstadoAluguel()}");
+            //Console.WriteLine($"{Nivus.Marca} está alugado? {Nivus.EstadoAluguel()}");
 
 
             Console.ReadKey();

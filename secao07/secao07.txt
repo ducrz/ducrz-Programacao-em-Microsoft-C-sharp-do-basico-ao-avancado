@@ -375,6 +375,7 @@ Pessoa Han = new Pessoa();
 //Chamando um método do objeto
 Han.Atira();
 
+
 //Acessando uma propriedade do objeto
 Console.WriteLine(Han.Profissao);
 
@@ -390,6 +391,126 @@ Um objeto é uma representação real de uma classe.
 
 
 40. Método construtor
+
+
+O que é?
+
+É um método de toda classe que é chamado no momento de criação de um objeto.
+
+Este método é sempre chamado uma vez que utilizamos a palavra chave "new Classe()".
+
+Mesmo que não esteja explícito, toda classe tem um construtor padrão.
+
+Este construtor padrão não tem parâmetros.
+
+
+Esta classe veículo possui um construtor padrão que será chamado ao criar um objeto do tipo veículo.
+
+public class Veiculo{
+
+	public string Modelo { get; set; }
+	public int Ano { get; set; }
+
+}
+
+
+Como Definir um Construtor
+
+Definindo um construtor sem parâmetros
+
+public class Veiculo{
+	public string Modelo { get; set; }
+	public int Ano { get; set; }
+
+	public Veiculo(){
+
+	}
+}
+
+O Construtor de uma classe deve sempre ter o mesmo nome da classe.
+
+
+Exemplo:
+
+public class Veiculo{
+
+	public string Modelo { get; set; }
+	public int Ano {get; set; }
+	
+	public Veiculo(){
+		Console.WriteLine("Construtor da classe veículo");
+	}
+}
+
+Ao criar um objeto do tipo veículo, o construtor será chamado.
+
+
+
+Construtor com Parâmetros
+
+É possível passar parâmetros para um construtor e realizar operações com isto:
+
+
+public class Veiculo{
+
+	public string Modelo { get; set; }
+	public int Ano { get; set;  }
+
+	public Veiculo(string TipoVeiculo){
+		Console.WriteLine($"Estou construindo um veículo do tipo: {TipoVeiculo}");
+
+	}
+
+}
+
+
+
+Um problema comum de programação é as propriedades que são obrigatórias.
+
+Pdeomos supor que para o negócio de alugar carros, toda vez que adiciono um carro a minha frota,
+vou querer que os campos Marca e Modelo sejam informados no momento da criação do objeto.
+
+
+public class Veiculo{
+
+	public string Marca { get; set; }
+	public string Modelo { get; set; }
+	public int Ano { get; set; }
+
+	public Veiculo(string Marca, string Modelo){
+		Console.WriteLine($"Estou construindo um veículo marca { Marca} e modelo { modelo } ");
+
+	}
+
+}
+
+Usando um construtor para inicializar as propriedades Marca e Modelo
+
+public class Veiculo{
+
+	public string Marca { get; set; }
+	public string Modelo { get; set; }
+	public int Ano { get; set; }
+
+	public Veiculo(string Marca, string Modelo){
+		this.Marca = Marca;
+		this.Modelo = Modelo;
+	} 
+}
+
+
+Neste exemplo foi usado um construtor para inicializar proprieades públicas da classe.
+
+Isto não é uma boa prática porque permite que qualquer acesso externo do objeto criado possa
+alterar o estado do objeto.
+
+As propriedades poderiam estar disponíveis para leitura, mas a sua escrita (set, mudança de valor)
+deveria ser controlada pela própria classe.
+
+Isto é chamado de ENCAPSULAMENTO.
+
+
+
 
 41. Encapsulamento
 
