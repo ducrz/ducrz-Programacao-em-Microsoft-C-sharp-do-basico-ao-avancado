@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ObjectOrientedProgramming.Classes;
+using ObjectOrientedProgramming.Classes.ClassesAbstratas;
 
 namespace ObjectOrientedProgramming
 {
@@ -11,8 +12,10 @@ namespace ObjectOrientedProgramming
     {
         public static void Main(string[] args)
         {
+            Veiculo veiculo = new Veiculo("Volkswagem", "Nivus", "Cinza");
+            
 
-            Carro carro = new Carro("Volkswagem", "Nivus", 110)
+            Carro carro = new Carro("Volkswagem", "Nivus", "Cinza", 110)
             {
                 //Marca = "Volkswagem",
                 // Cor = "Cinza",

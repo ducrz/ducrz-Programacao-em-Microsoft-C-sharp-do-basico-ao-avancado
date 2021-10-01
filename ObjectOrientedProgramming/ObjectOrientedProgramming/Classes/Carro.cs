@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ObjectOrientedProgramming.Classes.ClassesAbstratas;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,21 +7,16 @@ using System.Threading.Tasks;
 
 namespace ObjectOrientedProgramming.Classes
 {
-    class Carro
-    {
-        public string Marca { get; private set; }
-        public string Modelo { get; private set; }
-        public string Cor { get; set; }
-        public bool EstaAlugado { get; set; }
+    public class Carro  : Veiculo  {
+
+        public bool EstaAlugado { get; private set; }
 
         public double Preco { get; private set; }
   
         //Construtores
-        public Carro(string Marca, string Modelo, double Preco)
+        public Carro(string Marca, string Modelo, string Cor, double Preco) : base (Marca, Modelo, Cor)
         {
-            this.Marca = Marca;
-            this.Modelo = Modelo;
-            this.Preco = Preco;
+           this.Preco = Preco;
         }
 
         public void Alugar()
@@ -54,6 +50,13 @@ namespace ObjectOrientedProgramming.Classes
         public void AplicarDescontoAluguel(double Desconto)
         {
             this.Preco -= Desconto;
+        }
+
+        public void ProximaManutencao()
+        {
+            //if usuario == admin
+            Console.WriteLine($"Carro tem manutenção agendada para { this.DataProximaManutenção } ");
+
         }
     }
 }

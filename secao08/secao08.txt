@@ -1,0 +1,110 @@
+Seção 08: Orientação a Objetos com C# - Parte 2
+
+43. O que vamos aprender nesta seção?
+
+
+44. Herança
+
+Herança é uma característica que permite que você estenda uma classe, ou seja,
+você pode criar novas classes e fazer com que essas classes herdem as características da classe origem.
+
+Então você pode acrescentar novas propriedades e métodos a estas classes.
+
+Uma classe que herda as características de outra é chamada de classe-filha ou subclasse.
+
+A classe que foi herdada é chamada de classe-Pai, classe base ou superclasse.
+
+
+Como fazer em C#
+
+No C# usamos a declaração ":" (dois pontos) para implementar a herança. O C# suporta a herança múltipla, assim uma classe
+derivada pode ter uma ou mais classes base.
+
+
+class Veiculo{
+	public void Alugar(){
+
+	}
+	public void RegrasDeRetorno{
+
+	}
+
+}
+
+//Classe derivada
+
+class Carro : Veiculo{
+
+	public void Promocao(){
+
+	}
+}
+
+Herança e Construtores
+
+Caso a classe base tiver construtor e a filha também, é possível inicializar a classe base.
+
+
+
+//Classe base
+class Veiculo{
+
+	protected string Marca;
+	protected string Modelo;
+	private string Placa;
+
+	public Veiculo(string Marca, string Modelo){
+		this.Marca = Marca;
+		this.Modelo = Modelo;
+		this.Placa = "DDD-9999";
+	}
+
+	public void Alugar(){
+
+	}
+	public void RegrasDeRetorno(){
+
+	}
+}
+
+
+//Class derivada
+
+class Carro : Veiculo {
+	public void Promocao(string Marca, string Modelo) : base(Marca, Modelo){
+
+	}
+}
+
+
+Protected
+
+Fica visível apenas para a própria classe (no exemplo veículo) e para as classes derivadas.
+
+Nem sempre é uma boa ideia utilizar Protected porque pode "ferir" o encapsulamento.
+
+
+Veiculo.cs
+
+Dica: Uso do F12 para ir para onde está definida a propriedade/origem.
+
+Herança evita a duplicação de código, "reutilização de código".
+
+
+
+
+45. Sobrecarga de métodos
+
+46. Sobrescrita de métodos
+
+47. Classes abstratas
+
+48. Interfaces e o Polimorfismo
+
+49. Atributos e métodos estáticos
+
+50. Criando e manipulando listas de objetos
+
+51. Introdução a intruções lambda
+
+52. Recapitulando
