@@ -12,11 +12,21 @@ namespace ObjectOrientedProgramming.Classes
         public bool EstaAlugado { get; private set; }
 
         public double Preco { get; private set; }
+
+        public Carro() 
+        {
+
+        }
   
         //Construtores
-        public Carro(string Marca, string Modelo, string Cor, double Preco) : base (Marca, Modelo, Cor)
+        public Carro(string Marca, string Modelo, string Cor, double Preco, string Placa) : base (Marca, Modelo, Cor)
         {
            this.Preco = Preco;
+        }
+        //Sobrecarga de Construtor
+        public Carro(string Marca, string Modelo, string Cor, double Preco) : base(Marca, Modelo, Cor)
+        {
+            this.Preco = Preco;
         }
 
         public void Alugar()
@@ -26,9 +36,20 @@ namespace ObjectOrientedProgramming.Classes
             else
             {
                 EstaAlugado = true;
-                Console.WriteLine($"Carro { Marca } está Alugado! ");
+                Console.WriteLine($"Carro { Marca } está Alugado por 30 dias! ");
             }
       
+        }
+        public void Alugar(int dias)
+        {
+            if (EstaAlugado == true)
+                Console.WriteLine($"Carro { Marca } já está Alugado por { dias } dias ! Escolha Outro! ");
+            else
+            {
+                EstaAlugado = true;
+                Console.WriteLine($"Carro { Marca } está Alugado por { dias} dias! ");
+            }
+
         }
         public void RetornarCarro()
         {

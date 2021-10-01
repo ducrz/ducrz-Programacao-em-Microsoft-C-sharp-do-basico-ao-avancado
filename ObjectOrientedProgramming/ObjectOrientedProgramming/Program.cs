@@ -12,7 +12,8 @@ namespace ObjectOrientedProgramming
     {
         public static void Main(string[] args)
         {
-            Veiculo veiculo = new Veiculo("Volkswagem", "Nivus", "Cinza");
+
+            //Veiculo veiculo = new Veiculo("Volkswagem", "Nivus", "Cinza");
             
 
             Carro carro = new Carro("Volkswagem", "Nivus", "Cinza", 110)
@@ -33,6 +34,8 @@ namespace ObjectOrientedProgramming
             var Preco = Convert.ToDouble(Console.ReadLine());
 
             carro.MudarPrecoAluguel(Preco);
+
+            carro.Alugar(5);
 
             Console.WriteLine($"Primeiro Carro da Frota é: {carro.Marca} modelo { carro.Modelo} e com preço de aluguel { carro.Preco }");
 

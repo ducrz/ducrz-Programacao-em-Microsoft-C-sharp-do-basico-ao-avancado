@@ -10,6 +10,11 @@ namespace ObjectOrientedProgramming.Classes.ClassesAbstratas
 
         protected DateTime DataProximaManutenção { get; set; }
 
+        public Veiculo()
+        {
+
+        }
+
         public Veiculo(string Marca, string Modelo, string Cor) //Construtor
         {
             this.Marca = Marca;

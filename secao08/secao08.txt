@@ -95,6 +95,41 @@ Herança evita a duplicação de código, "reutilização de código".
 
 45. Sobrecarga de métodos
 
+
+Em orientação a objetos, uma sobrecarga refere-se aos métodos de uma classe, sendo que estes podem
+ser sobrecarregados em relação aos seus nomes, podendo diversos métodos possuir o mesmo nome,
+porém os tipos de dados da lista de parâmetros deve ser divergente.
+
+Ou seja, os métodos têm o mesmo nome mas a sua assinatura difere.
+
+
+Como fazer em C#
+
+
+class Carro{
+
+	public void Alugar(){
+	
+	}
+	public void Alugar(DateTime DataInicio){
+	
+	}
+	public void Alugar(int NumeroDeDias){
+
+	}
+}
+
+
+class Carro{
+
+	public Carro(){}
+	public Carro(string Modelo){}
+	public Carro(string Modelo, string Marca){}
+
+}
+
+
+
 46. Sobrescrita de métodos
 
 47. Classes abstratas
