@@ -14,7 +14,9 @@ namespace ObjectOrientedProgramming
         {
 
             //Veiculo veiculo = new Veiculo("Volkswagem", "Nivus", "Cinza");
-            
+
+            Moto Honda = new Moto("Honda", "CB-1000", "Branco");
+            Honda.ProximaManutencao();
 
             Carro carro = new Carro("Volkswagem", "Nivus", "Cinza", 110)
             {
@@ -23,6 +25,9 @@ namespace ObjectOrientedProgramming
                 //Modelo = "2022",
                 //Preco = 110
             };
+
+
+            carro.ProximaManutencao();
 
             //Nivus.Marca = "Volkswagem";
             //Nivus.Cor = "Cinza";

@@ -132,6 +132,52 @@ class Carro{
 
 46. Sobrescrita de métodos
 
+Sobreescrevendo um método.
+
+
+Sobrescrita (override), é uma técnica de OOP que permite sobreescrever um comportamento de uma classe base.
+
+Usando override podemos rescrever um método em uma classe derivada para fazer algo diferente do método
+sobrescrito da classe base.
+
+Para isto o método da classe base deve ser declarado com a palavra chave virtual.
+
+
+REGRAS
+
+- Método virtual não pode ser privado;
+- As assinaturas dos métodos base e sobrescrito devem ser idênticas;
+- O override só funciona em métodos virtuais.
+
+Sobrescrita é um polimorfismo.
+
+
+
+Como fazer em C#
+
+class Veiculo{
+
+	public void Alugar(){
+
+	}
+
+	public virtual void RegrasDeRetorno(){
+
+	}
+
+}
+
+class Carro : Veiculo{
+
+	public override void RegrasDeRetorno(){
+
+	}
+
+}
+
+
+
+
 47. Classes abstratas
 
 48. Interfaces e o Polimorfismo
@@ -140,6 +186,6 @@ class Carro{
 
 50. Criando e manipulando listas de objetos
 
-51. Introdução a intruções lambda
+51. Introdução a instruções lambda
 
 52. Recapitulando

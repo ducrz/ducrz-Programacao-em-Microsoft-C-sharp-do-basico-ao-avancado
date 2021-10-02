@@ -72,11 +72,12 @@ namespace ObjectOrientedProgramming.Classes
         {
             this.Preco -= Desconto;
         }
-
-        public void ProximaManutencao()
+        
+        //Sobrecarga de método
+        public override void ProximaManutencao()
         {
             //if usuario == admin
-            Console.WriteLine($"Carro tem manutenção agendada para { this.DataProximaManutenção } ");
+            Console.WriteLine($"O Carro tem manutenção especial agendada para a data: { this.DataProximaManutenção.AddDays(30) } ");
 
         }
     }

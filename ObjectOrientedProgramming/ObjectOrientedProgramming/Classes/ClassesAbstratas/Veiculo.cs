@@ -20,6 +20,13 @@ namespace ObjectOrientedProgramming.Classes.ClassesAbstratas
             this.Marca = Marca;
             this.Modelo = Modelo;
             this.Cor = Cor;
+            this.DataProximaManutenção = DateTime.Now;
+
+        }
+        public virtual void ProximaManutencao()
+        {
+            //if usuario == admin
+            Console.WriteLine($"O Veículo tem manutenção padrão agendada para a data: { this.DataProximaManutenção } ");
 
         }
 
