@@ -13,5 +13,9 @@ namespace ObjectOrientedProgramming.Classes.ClassesAbstratas
 
         }
 
+        public override void ProximaManutencao(int Dias)
+        {
+            Console.WriteLine($"Próxima Manutenção da Moto em dias: { Dias }");
+        }
     }
 }

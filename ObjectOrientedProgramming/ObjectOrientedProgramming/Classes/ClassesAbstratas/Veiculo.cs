@@ -2,7 +2,7 @@
 
 namespace ObjectOrientedProgramming.Classes.ClassesAbstratas
 {
-    public class Veiculo //Classe-Pai
+    abstract public class Veiculo //Classe-Pai
     {
         public string Marca { get; private set; }
         public string Modelo { get; private set; }
@@ -29,6 +29,7 @@ namespace ObjectOrientedProgramming.Classes.ClassesAbstratas
             Console.WriteLine($"O Veículo tem manutenção padrão agendada para a data: { this.DataProximaManutenção } ");
 
         }
-
+        //Sobrecarga - assinatura diferente
+        abstract public void ProximaManutencao(int Dias);
     }
 }

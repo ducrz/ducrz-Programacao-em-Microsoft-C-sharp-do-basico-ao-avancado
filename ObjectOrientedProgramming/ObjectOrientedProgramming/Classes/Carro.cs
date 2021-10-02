@@ -80,5 +80,10 @@ namespace ObjectOrientedProgramming.Classes
             Console.WriteLine($"O Carro tem manutenção especial agendada para a data: { this.DataProximaManutenção.AddDays(30) } ");
 
         }
+
+        public override void ProximaManutencao(int Dias)
+        {
+            Console.WriteLine($"Próxima manutenção do Carro em dias: { Dias }");
+        }
     }
 }

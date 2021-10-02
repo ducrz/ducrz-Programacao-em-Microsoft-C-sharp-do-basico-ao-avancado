@@ -180,6 +180,63 @@ class Carro : Veiculo{
 
 47. Classes abstratas
 
+Uma classe abstrata é um tipo de classe que serve de base para a criação de outras classes.
+
+Existem diferenças para classes normais que servem de base para a criação de objetos.
+
+Classe abstrata é utilizada para a construção de outras classes.
+Classes normais são utilizadas para construção de objetos.
+
+Uma classe abstrata representa um ideal, algo abstrato, uma ideia que não tem forma.
+
+
+
+Regras
+
+- Apenas podem ser herdadas por outras classes;
+- Não podem ser instanciadas;
+- Podem ter implementações de métodos completos;
+- Podem conter apenas a assinatura de um futuro método.
+
+
+
+Como Fazer isso em C#
+
+Implementa-se utilizando a palavra chave abstract:
+
+abstract public class Veiculo{
+
+	public void Alugar(){
+
+		Console.WriteLine("Este carro foi alugado!");
+	}
+
+	abstract public void RetornoVeiculo();
+
+
+}
+
+
+
+Criando uma classe que herda de veículo:
+
+public class Carro : Veiculo{
+
+	public override void RetornoVeiculo(){
+
+		Console.WriteLine("Carro Retornado");
+	}
+
+}
+
+É também necessário sobrescrever o método que foi herdado da classe abstrata e que não tem implementação.
+
+
+
+
+
+
+
 48. Interfaces e o Polimorfismo
 
 49. Atributos e métodos estáticos

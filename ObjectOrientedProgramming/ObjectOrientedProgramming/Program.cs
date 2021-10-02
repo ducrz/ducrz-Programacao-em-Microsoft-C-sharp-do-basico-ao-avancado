@@ -13,21 +13,26 @@ namespace ObjectOrientedProgramming
         public static void Main(string[] args)
         {
 
+            //Veiculo VeiculoVolkswagem = new Veiculo("Volkswagem", "Nivus", "Cinza");
+
             //Veiculo veiculo = new Veiculo("Volkswagem", "Nivus", "Cinza");
 
+
             Moto Honda = new Moto("Honda", "CB-1000", "Branco");
-            Honda.ProximaManutencao();
+            Honda.ProximaManutencao(5);
 
-            Carro carro = new Carro("Volkswagem", "Nivus", "Cinza", 110)
-            {
-                //Marca = "Volkswagem",
-                // Cor = "Cinza",
-                //Modelo = "2022",
-                //Preco = 110
-            };
+            Carro carro = new Carro("Volkswagem", "Nivus", "Cinza", 110);
+            //Carro carro = new Carro("Volkswagem", "Nivus", "Cinza", 110)
+            //{
+            //Marca = "Volkswagem",
+            // Cor = "Cinza",
+            //Modelo = "2022",
+            //Preco = 110
+            // };
 
 
-            carro.ProximaManutencao();
+            //carro.ProximaManutencao();
+            carro.ProximaManutencao(10);
 
             //Nivus.Marca = "Volkswagem";
             //Nivus.Cor = "Cinza";
