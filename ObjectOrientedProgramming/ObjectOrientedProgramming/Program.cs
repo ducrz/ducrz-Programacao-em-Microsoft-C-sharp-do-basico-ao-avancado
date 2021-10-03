@@ -19,7 +19,7 @@ namespace ObjectOrientedProgramming
 
 
             Moto Honda = new Moto("Honda", "CB-1000", "Branco");
-            Honda.ProximaManutencao(5);
+            Honda.ProximaManutencao();
 
             Carro carro = new Carro("Volkswagem", "Nivus", "Cinza", 110);
             //Carro carro = new Carro("Volkswagem", "Nivus", "Cinza", 110)

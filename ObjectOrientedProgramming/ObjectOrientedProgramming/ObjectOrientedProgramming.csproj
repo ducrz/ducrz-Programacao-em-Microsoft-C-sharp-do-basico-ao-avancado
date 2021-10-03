@@ -47,6 +47,8 @@
     <Compile Include="Classes\ClassesAbstratas\Moto.cs" />
     <Compile Include="Classes\ClassesAbstratas\Veiculo.cs" />
     <Compile Include="Classes\ClassesAbstratas\Pessoa.cs" />
+    <Compile Include="Classes\Interfaces\ICarroVolkswagem.cs" />
+    <Compile Include="Classes\Interfaces\ICarro.cs" />
     <Compile Include="Classes\PessoaFisica.cs" />
     <Compile Include="Classes\PessoaJuridica.cs" />
     <Compile Include="Program.cs" />

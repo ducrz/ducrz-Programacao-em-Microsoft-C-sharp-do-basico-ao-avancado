@@ -29,7 +29,6 @@ namespace ObjectOrientedProgramming.Classes.ClassesAbstratas
             Console.WriteLine($"O Veículo tem manutenção padrão agendada para a data: { this.DataProximaManutenção } ");
 
         }
-        //Sobrecarga - assinatura diferente
-        abstract public void ProximaManutencao(int Dias);
+       
     }
 }

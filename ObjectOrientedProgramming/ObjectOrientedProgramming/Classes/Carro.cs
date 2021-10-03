@@ -1,4 +1,5 @@
 ﻿using ObjectOrientedProgramming.Classes.ClassesAbstratas;
+using ObjectOrientedProgramming.Classes.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,8 @@ using System.Threading.Tasks;
 
 namespace ObjectOrientedProgramming.Classes
 {
-    public class Carro  : Veiculo  {
+    public class Carro  : Veiculo, ICarro, ICarroVolkswagem
+    {
 
         public bool EstaAlugado { get; private set; }
 
@@ -81,9 +83,19 @@ namespace ObjectOrientedProgramming.Classes
 
         }
 
-        public override void ProximaManutencao(int Dias)
+        public void ProximaManutencao(int Dias)
         {
             Console.WriteLine($"Próxima manutenção do Carro em dias: { Dias }");
+        }
+
+        public string EstadoALuguel()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void mudarPrecoAluguel(double NovoPreco)
+        {
+            throw new NotImplementedException();
         }
     }
 }

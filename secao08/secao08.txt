@@ -234,10 +234,90 @@ public class Carro : Veiculo{
 
 
 
-
-
-
 48. Interfaces e o Polimorfismo
+
+Interfaces
+
+Interface é um contrato entre a classe e o mundo externo. Quando uma classe implementa uma interface,
+ela está comprometida a fornecer o comportamento publicado pela interface.
+
+
+
+Uma classe pode implementar inúmeras interfaces.
+
+
+
+POLIMORFISMO
+
+
+Uma funcionalidade oferecida pela OO é o polimorfismo, que significa "muitas formas".
+
+O Polimorfismo permite, em uma das suas metodologias de aplicação, que diferentes classes tenham métodos
+com a mesma assinatura (mesmo contrato), porém estes métodos (em suas respectivas classes) podem possuir comportamentos
+diferentes, de acordo com a necessidade de cada classe que o implementa.
+
+
+A implemetação do polimorfismo pode ser realizada fazendo uso de interfaces ou classes abstratas,
+onde ocorrem apenas a implementação das assinaturas dos métodos, ou seja, do contrato.
+
+Desta forma o comportamento deve ser implementado nas classes concretas que implementam as interfaces ou
+estendem as classes abstratas.
+
+No polimorfismo, as assinaturas de métodos descritas nos contratos devem ser obrigatoriamente implementadas
+na classe que as herda.
+
+
+
+Como fazer em C#
+
+
+public interface IVeiculo{
+
+	void Alugar();
+	void RetornoVeiculo();
+
+}
+
+Não existe a necessidade de adicionar modificadores de acesso.
+
+
+
+public class Carro : IVeiculo{
+
+	public void Alugar(){
+
+		Console.WriteLine("Este carro foi alugado.");
+	}
+	
+	public void RetornoVeiculo(){
+
+		Console.WriteLine("Carro Retornado");
+	}
+
+}
+
+Não é necessário utilizar a palavra chave override.
+
+
+Folder Interfaces
+
+Add > New Interface > ICarro.cs
+
+
+
+
+Classes Abstratas vs Interfaces
+
+
+- Classes podem herdar apenas de uma classe abstrata.
+- Classes podem implementar várias interfaces.
+- Interfaces são úteis na inversão de controle, injeção de dependência e ajudam na testabilidade da classe.
+
+
+Pensar bem nestes pontos quando for decidir entre usar classes abstratas ou interfaces.
+
+
+
 
 49. Atributos e métodos estáticos
 
