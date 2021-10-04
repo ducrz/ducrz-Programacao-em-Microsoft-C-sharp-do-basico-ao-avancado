@@ -1,0 +1,43 @@
+Seção 10: Aulas extras
+
+54. Novidades do .Net 5 e C# 9 - Top level statements
+
+
+Relevância do .NET 5, novo .NET CORE.
+
+Criando um novo projeto usando .NET 5 no Visual Studio.
+
+
+Top Level Statements
+
+Declarações de alto nível.
+
+
+Versão atual : 5.0.10
+
+dotnet --version
+
+dotnet new console -n consoleTesteNET5
+
+
+    <TargetFramework>net5.0</TargetFramework>
+
+
+
+
+55. Novidades do C# 9 - Init de propriedades
+
+
+Cliente.cs
+
+
+56. Usando dicionarios (Dictionary)
+
+
+CONSOLETESTENET5
+
+
+            Dictionary<string, string> meuDicionario = new Dictionary<string, string>;
+
+
+
