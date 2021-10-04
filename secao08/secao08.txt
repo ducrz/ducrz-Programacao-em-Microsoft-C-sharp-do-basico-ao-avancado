@@ -375,6 +375,35 @@ Folder > ClassesEstaticas
 
 50. Criando e manipulando listas de objetos
 
+A coleção List(T) representa uma coleção de objetos tipados, a qual é altamente otimizada oferecendo
+um bom desempenho e pode ser acessada usando índice.
+
+Esta classe fornece métodos para percorrer, filtrar, ordenar, procurar e manipular coleções.
+A versão não genérica seria a classe ArrayList.
+
+
+Como fazer em C#
+
+Lista de Objetos
+
+Se eu tenho um objeto Carro, eu posso criar uma lista de objetos da seguinte forma:
+
+
+List<Carro> pLista = new List<Carro>();
+
+pLista.Add(new Carro("Volkswagem", "Nivus"));
+pLista.Add(new Carro("Honda","HRV"));
+
+//Para remover um item
+
+pLista.Remove(Carro);
+
+//Encontrar um carro
+pLista.Find(Carro);
+
+
+
+
 51. Introdução a instruções lambda
 
 52. Recapitulando

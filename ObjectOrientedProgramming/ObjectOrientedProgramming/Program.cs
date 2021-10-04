@@ -71,6 +71,25 @@ namespace ObjectOrientedProgramming
             //Console.WriteLine($"{Nivus.Marca} está alugado? {Nivus.EstadoAluguel()}");
 
 
+            //Listas de Objetos
+            List<Carro> listaDeCarros = new List<Carro>();
+
+            listaDeCarros.Add(carro);
+
+            listaDeCarros.Add(new Carro("Honda", "HRV", "Cinza", 160));
+
+          
+
+            Console.WriteLine($"Número de Elementos da Lista { listaDeCarros.Count }");
+
+            foreach (var item in listaDeCarros)
+            {
+                Console.WriteLine($"Carro Marca { item.Marca } , Modelo { item.Modelo } e cor { item.Cor}");
+                carro.ProximaManutencao();
+            }
+
+          
+            
             Console.ReadKey();
 
         }
