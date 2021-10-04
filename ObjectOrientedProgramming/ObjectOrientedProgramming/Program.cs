@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using ObjectOrientedProgramming.Classes;
 using ObjectOrientedProgramming.Classes.ClassesAbstratas;
+using ObjectOrientedProgramming.Classes.ClassesEstaticas;
 
 namespace ObjectOrientedProgramming
 {
@@ -33,6 +34,13 @@ namespace ObjectOrientedProgramming
 
             //carro.ProximaManutencao();
             carro.ProximaManutencao(10);
+
+
+            Console.WriteLine($"Número de Pneus { carro.NumeroDePneus }");
+
+            CarroDadosBasicos.ConsumoMedio(335, 30);
+
+
 
             //Nivus.Marca = "Volkswagem";
             //Nivus.Cor = "Cinza";

@@ -321,6 +321,58 @@ Pensar bem nestes pontos quando for decidir entre usar classes abstratas ou inte
 
 49. Atributos e métodos estáticos
 
+
+Métodos e atributos static
+
+
+Permitem que um método possa ser invocado sem precisar criar uma instância de classe.
+
+
+O modificador static permite indicar que o método pertence a classe a não as suas instâncias.
+
+"Auto invocável"
+
+
+
+Como fazer em C#
+
+
+public class CarroDadosBasicos{
+
+	public static void Descricao(){
+
+		Console.WriteLine("Este é um método estático.");
+	}
+
+}
+
+Da mesma forma é possível ter propriedades estáticas.
+
+
+public class CarroDadosBasicos{
+
+	public static string NumeroRodas = "4";
+	public static string NumeroBaterias { get { return "1";} }
+
+	public static void Descricao(){
+	
+		Console.WriteLine("Este é um método estático com uma descrição do carro");
+	}
+
+
+}
+
+
+A primeira declaração é um tipo "campo" ou "field".
+
+A segunda declaração é uma propriedade.
+
+Folder > ClassesEstaticas
+
+
+
+
+
 50. Criando e manipulando listas de objetos
 
 51. Introdução a instruções lambda

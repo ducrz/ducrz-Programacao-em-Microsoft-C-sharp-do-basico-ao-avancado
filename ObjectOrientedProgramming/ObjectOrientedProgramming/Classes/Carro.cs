@@ -1,4 +1,5 @@
 ﻿using ObjectOrientedProgramming.Classes.ClassesAbstratas;
+using ObjectOrientedProgramming.Classes.ClassesEstaticas;
 using ObjectOrientedProgramming.Classes.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -15,6 +16,8 @@ namespace ObjectOrientedProgramming.Classes
 
         public double Preco { get; private set; }
 
+        public string NumeroDePneus { get; set; }
+
         public Carro() 
         {
 
@@ -24,11 +27,13 @@ namespace ObjectOrientedProgramming.Classes
         public Carro(string Marca, string Modelo, string Cor, double Preco, string Placa) : base (Marca, Modelo, Cor)
         {
            this.Preco = Preco;
+            this.NumeroDePneus = CarroDadosBasicos.NumeroDePneus;
         }
         //Sobrecarga de Construtor
         public Carro(string Marca, string Modelo, string Cor, double Preco) : base(Marca, Modelo, Cor)
         {
             this.Preco = Preco;
+            this.NumeroDePneus = CarroDadosBasicos.NumeroDePneus;
         }
 
         public void Alugar()
