@@ -87,9 +87,41 @@ namespace ObjectOrientedProgramming
                 Console.WriteLine($"Carro Marca { item.Marca } , Modelo { item.Modelo } e cor { item.Cor}");
                 carro.ProximaManutencao();
             }
+            Console.ReadKey();
 
-          
-            
+
+            //LINQ
+
+            List<Carro> listaDeCarrosPremium = new List<Carro>()
+            {
+                new Carro("BMW", "320", "Preto", 279),
+                new Carro("BMW", "530e", "Preto", 425),
+                new Carro("Mercedes", "C180", "Preto", 238),
+                new Carro("Audi", "A4", "Preto", 272)
+            };
+
+            //LINQ
+            //var listaFiltrada = from MeuCarro in listaDeCarrosPremium
+            //                    where MeuCarro.Preco > 150 &&  MeuCarro.Marca == "BMW"
+            //                    select MeuCarro;
+
+            //var listaFiltrada = listaDeCarrosPremium.Where(meuCarro => meuCarro.Marca == "BMW" && meuCarro.Preco > 200);
+
+            //Lambda
+            Func<Carro, bool> filtroCarroBMW = meuCarro => meuCarro.Marca == "BMW";
+
+            //var listaFiltrada = listaDeCarrosPremium.Where(meuCarro => meuCarro.Marca == "BMW")
+            //                                        .Where(meuCarro => meuCarro.Preco >= 200);
+
+            var listaFiltrada = listaDeCarrosPremium.Where(filtroCarroBMW)
+                                        .Where(meuCarro => meuCarro.Preco >= 200);
+
+            foreach (var carroPremium in listaFiltrada)
+            {
+                Console.WriteLine($"Carro Marca { carroPremium.Marca }, Modelo { carroPremium.Modelo} e cor { carroPremium.Cor } ");
+
+            }
+
             Console.ReadKey();
 
         }

@@ -402,8 +402,128 @@ pLista.Remove(Carro);
 pLista.Find(Carro);
 
 
-
-
 51. Introdução a instruções lambda
 
+Uma expressão lambda é uma maneira conveniente de definir uma função anônima (sem nome)
+que pode ser transmitida como uma variável ou como um parâmetro para uma chamada de método.
+Muitos métodos LINQ usam uma função (chamada delegada) como parâmetro.
+
+O C# 3.0 (.NET 3.5) introduziu a expressão lambda junto com o LINQ. A expressão lambda  é uma maneira
+mais curta de representar o método anônimo usando alguma sintaxe especial.
+
+
+
+Exemplo de expressão Lambda
+
+
+Func<int, int> MultiplicarPor5 = num => num *5;
+//Return 35
+int result = MultiplicarPor5(7);
+
+
+A expressão num => num * 5 é a lambda.
+
+O operador => é o operador lambda.
+
+O "num" é um parâmetro de entrada para a função anônima.
+
+Logo quando a função MultiplicarPor5 for chamada o resultado é 7*5 = 35.
+
+
+Parâmetros
+
+O Parâmetro "num" não especifica explicitamente um tipo de dados.
+O compilador infere os tipos de dados dos parâmetros de expressão lambda do contexto.
+
+Nesse caso, o contexto é que a expressão lambda é armazenada em uma variável do tipo Func <int, int>.
+Isso significa que ele pega um parâmetro int e retorna um resultado int.
+
+
+É possível passar mais de um parâmetro para uma Lambda:
+
+
+Func<int, int, int> Multiplicar = (a,b) => a*b;
+//Return 35
+
+int result = Multiplicar(7,5);
+
+
+
+LINQ
+
+Language-Integrated Query, é uma tecnologia que permite integrar consultar diretamente dentro da linguagem C#.
+
+Segundo a Microsoft, a família de tecnologias LINQ fornece uma experiência de consulta consistente para objetos
+(LINQ to Objects), banco de dados relacionais (LINQ to SQL) e XML (LINQ to XML).
+
+
+
+LINQ
+
+As expressões de consulta (query expressions) são escritas em uma sintaxe de consulta declarativa.
+
+Usando a sintaxe de consulta, você pode executar operações de filtragem, agrupamento, seleção e etc, em fontes
+de dados com o mínimo de código.
+
+São usados os mesmos padrões básicos de expressões de consultas para consultar e transformar dados
+em banco de dados SQL, ADO .NET Datasets, documentos e fluxos SML e coleções .NET.
+
+
+
+
+int[] notas = new int[] {97, 92, 81, 60};
+
+IEnumerable<int> notasQuery =
+from nota in notas
+where nota > 80
+select nota;
+
+
+
+Lambda Expressions e Linq
+
+Normalmente a expressão lambda pode ser usada com uma consulta LINQ dentro de um método que tenha suporte.
+
+A classe estática enumerável inclui o método de extensão Where para IEnumerable<T>
+que aceita Func<TSource, bool>.
+
+Portanto, o método de extensão Where() da coleção IEnumerable<Carro> é necessário para
+passar uma Func<Carro, bool>.
+
+
+int[] notas = {90, 71, 82, 93, 75, 82};
+
+int contagem = notas.Where(n => n > 80).Count();
+
+
+Como fazer em C#
+
+//Lista de Carros
+IList<Carro> listaCarros = new List<Carro>() { };
+
+//Lambda
+Func<Carro, bool> filtro = s => s.Cor == "Verde";
+
+
+//Linq com lambda usada no método Where
+var listaFiltrada = listaCarros.Where(filtro).ToList();
+
+
+
+
+
 52. Recapitulando
+
+Herança.
+Sobrecarga de métodos.
+Sobreescrita de métodos.
+Classes Abstratas.
+Interfaces e Polimorfismo.
+Atributos e métodos estáticos.
+Criando e manipulando listas de objetos.
+Introdução a instruções Lambda.
+
+
+
+
+
